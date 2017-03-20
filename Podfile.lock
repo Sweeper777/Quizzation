@@ -1,0 +1,21 @@
+PODS:
+  - Base64nl (1.2)
+  - SCLAlertView (0.7.0)
+  - SwiftyJSON (3.1.4)
+  - SwiftyUtils (0.7.0)
+
+DEPENDENCIES:
+  - Base64nl
+  - SCLAlertView
+  - SwiftyJSON
+  - SwiftyUtils
+
+SPEC CHECKSUMS:
+  Base64nl: a497bdcd1c01ea793d36b399016195a8713c0e95
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwiftyUtils: 87094996d977846e5a9f2cbe653ff28dc15ba187
+
+PODFILE CHECKSUM: d821b8bc3e6ea1c5e6ad1854a7a7d974d3282767
+
+COCOAPODS: 1.1.0.beta.1
