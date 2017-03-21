@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Quizzation
-//
-//  Created by Mulang Su on 19/03/2017.
-//  Copyright © 2017 Mulang Su. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
