@@ -8,4 +8,5 @@ target 'Quizzation' do
   pod 'SCLAlertView'
   pod 'Base64nl'
   pod 'SwiftyJSON'
+  pod 'Eureka'
 end

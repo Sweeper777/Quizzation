@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Eureka.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Quizzation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>31AAA3F77EBBEEB7BF0D5913665470F1</key>
+		<key>367775726ABA7003552CA455107C1627</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>756E73ED377921A11FC5F6585E0C0677</key>
+		<key>7F93332ED442F9AEE14FBB969FAD1D2A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88CB9380947C45D48970A8BF74DEAD1F</key>
+		<key>87550B9A8BA7462DCA6FA4CB4CE124D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E739399004EDB5BCD394D0F6ADDA88A4</key>
+		<key>A1D491FAD4FE6B56D25FDAFD6B380146</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F58293F28CD0EA0D069FE6C574895625</key>
 		<dict>
 			<key>primary</key>
 			<true/>
