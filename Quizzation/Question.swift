@@ -29,6 +29,14 @@ class Question {
         self.possibleAnswers = possibleAnswers
     }
     
+    func toJSON() -> JSON {
+        return [
+            "type": type.rawValue,
+            "questionText": questionText,
+            "possibleAnswers": possibleAnswers,
+        ]
+    }
+    
 }
 
 enum QuestionType: Int {
