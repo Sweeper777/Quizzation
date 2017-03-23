@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "87550B9A8BA7462DCA6FA4CB4CE124D2"
-               BuildableName = "SwiftyUtils.framework"
-               BlueprintName = "SwiftyUtils"
+               BlueprintIdentifier = "367775726ABA7003552CA455107C1627"
+               BuildableName = "Eureka.framework"
+               BlueprintName = "Eureka"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "87550B9A8BA7462DCA6FA4CB4CE124D2"
-            BuildableName = "SwiftyUtils.framework"
-            BlueprintName = "SwiftyUtils"
+            BlueprintIdentifier = "367775726ABA7003552CA455107C1627"
+            BuildableName = "Eureka.framework"
+            BlueprintName = "Eureka"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
