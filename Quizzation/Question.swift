@@ -42,6 +42,17 @@ class Question {
         ]
     }
     
+    static func from(json: JSON) -> Question? {
+        guard let type = json["type"].int else { return nil }
+        guard let questionText = json["questionText"].string else { return nil }
+        guard let possibleAnswersJSON = json["possibleAnswers"].array else { return nil }
+        let possibleAnswers = possibleAnswersJSON.map { $0.string }.filter { $0 != nil }.map { $0! }
+        if possibleAnswers.isEmpty {
+            return nil
+        }
+        
+        return Question(type: QuestionType(rawValue: type)!, questionText: questionText, possibleAnswers: possibleAnswers, hint: json["hint"].string)
+    }
 }
 
 enum QuestionType: Int {
