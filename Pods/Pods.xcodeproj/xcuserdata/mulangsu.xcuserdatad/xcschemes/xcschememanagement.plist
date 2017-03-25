@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MGSwipeTableCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Quizzation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7F93332ED442F9AEE14FBB969FAD1D2A</key>
+		<key>4E1263BFF45F6446CF3DE29AE234C893</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>87550B9A8BA7462DCA6FA4CB4CE124D2</key>
+		<key>657C7A18CF96FE3E8ED4812E7FC8C058</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77BA2899730B73F34BA28553E9F17C63</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A1D491FAD4FE6B56D25FDAFD6B380146</key>
+		<key>B844F81B61188890AA36B2A27C04FCC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F58293F28CD0EA0D069FE6C574895625</key>
+		<key>CF19F28CD9E286B8011354F8C4A732CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

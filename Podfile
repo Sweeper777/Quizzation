@@ -9,4 +9,5 @@ target 'Quizzation' do
   pod 'Base64nl'
   pod 'SwiftyJSON'
   pod 'Eureka'
+  pod 'MGSwipeTableCell'
 end
