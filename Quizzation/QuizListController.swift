@@ -1,7 +1,6 @@
 import UIKit
-import Eureka
 
-class ViewController: FormViewController {
+class QuizListController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
