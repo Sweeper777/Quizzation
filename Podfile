@@ -10,5 +10,4 @@ target 'Quizzation' do
   pod 'SwiftyJSON'
   pod 'Eureka'
   pod 'MGSwipeTableCell'
-  pod 'Firebase/Core'
 end
