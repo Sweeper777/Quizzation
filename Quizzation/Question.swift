@@ -35,23 +35,23 @@ class Question {
     
     func toJSON() -> JSON {
         return [
-            "type": type.rawValue,
-            "questionText": questionText,
-            "possibleAnswers": possibleAnswers,
-            "hint": hint as Any
+            questionTypeKey: type.rawValue,
+            questionTextKey: questionText,
+            possibleAnswersKey: possibleAnswers,
+            hintKey: hint as Any
         ]
     }
     
     static func from(json: JSON) -> Question? {
         guard let type = json["type"].int else { return nil }
-        guard let questionText = json["questionText"].string else { return nil }
-        guard let possibleAnswersJSON = json["possibleAnswers"].array else { return nil }
+        guard let questionText = json[questionTypeKey].string else { return nil }
+        guard let possibleAnswersJSON = json[possibleAnswersKey].array else { return nil }
         let possibleAnswers = possibleAnswersJSON.map { $0.string }.filter { $0 != nil }.map { $0! }
         if possibleAnswers.isEmpty {
             return nil
         }
         
-        return Question(type: QuestionType(rawValue: type)!, questionText: questionText, possibleAnswers: possibleAnswers, hint: json["hint"].string)
+        return Question(type: QuestionType(rawValue: type)!, questionText: questionText, possibleAnswers: possibleAnswers, hint: json[hintKey].string)
     }
 }
 
