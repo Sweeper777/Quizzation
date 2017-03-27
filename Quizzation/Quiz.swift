@@ -10,4 +10,11 @@ class Quiz {
         self.questions = questions
     }
     
+    func toJSON() -> JSON {
+        return [
+            questionNameKey: name,
+            questionsKey: questions.map { $0.toJSON() }
+        ]
+    }
+    
 }
