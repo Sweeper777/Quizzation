@@ -17,4 +17,10 @@ class Quiz {
         ]
     }
     
+    static func from(json: JSON) -> Quiz? {
+        guard let name = json[quizNameKey].string else { return nil }
+        guard let arr = json[questionsKey].array else { return nil }
+        let questions = arr.map { Question.from(json: $0) }.filter { $0 != nil }
+        return Quiz(name: name, questions: questions as! [Question])
+    }
 }
