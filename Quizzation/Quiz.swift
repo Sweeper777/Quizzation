@@ -12,7 +12,7 @@ class Quiz {
     
     func toJSON() -> JSON {
         return [
-            questionNameKey: name,
+            quizNameKey: name,
             questionsKey: questions.map { $0.toJSON() }
         ]
     }
