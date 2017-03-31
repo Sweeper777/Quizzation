@@ -1,10 +1,16 @@
 import UIKit
+import Base64nl
+import RealmSwift
+import SwiftyJSON
 
 class QuizListController: UITableViewController {
-
+    let realm = try? Realm()
+    var quizzes: Results<QuizData>!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        test2()
+        
+        quizzes = realm?.objects(QuizData.self)
     }
     
     func test1() {
@@ -26,10 +32,11 @@ class QuizListController: UITableViewController {
         return quizzes.count
     }
     
-    func test2() {
-        let testQuestion = Question(questionText: "笔在桌子___", possibleAnswers: ["上", "下"])
-        let data = try! testQuestion.toJSON().rawData()
-        print(String(data: data, encoding: .utf8)!)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        let quizData = quizzes[indexPath.row].data!
+        let json = JSON(data: quizData as Data)
+        cell.textLabel?.text = json[quizNameKey].string
     }
 }
 
