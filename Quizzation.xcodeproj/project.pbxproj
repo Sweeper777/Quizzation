@@ -10,6 +10,7 @@
 		2A847C34709BE346586FDB01 /* Pods_Quizzation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10350AE962A7E795848B48E /* Pods_Quizzation.framework */; };
 		5A180DC21E80456800F9EE1A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A180DC11E80456800F9EE1A /* Question.swift */; };
 		5A1D21951E86884F0099B077 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D21941E86884F0099B077 /* JSONKeys.swift */; };
+		5A1D44AB1E94D1D70092DBF0 /* NewQuizController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D44AA1E94D1D70092DBF0 /* NewQuizController.swift */; };
 		5A1D5D2C1E87A46C00714BBC /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D5D2B1E87A46C00714BBC /* Quiz.swift */; };
 		5A1D5D2E1E88541B00714BBC /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D5D2D1E88541B00714BBC /* QuizData.swift */; };
 		5A208A1D1E7E75CB00B1E68D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A208A1C1E7E75CB00B1E68D /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 		0B591FAF264812C1E2D46E6C /* Pods-Quizzation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quizzation/Pods-Quizzation.debug.xcconfig"; sourceTree = "<group>"; };
 		5A180DC11E80456800F9EE1A /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5A1D21941E86884F0099B077 /* JSONKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
+		5A1D44AA1E94D1D70092DBF0 /* NewQuizController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewQuizController.swift; sourceTree = "<group>"; };
 		5A1D5D2B1E87A46C00714BBC /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		5A1D5D2D1E88541B00714BBC /* QuizData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
 		5A208A191E7E75CB00B1E68D /* Quizzation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 			children = (
 				5A208A1C1E7E75CB00B1E68D /* AppDelegate.swift */,
 				5A208A1E1E7E75CB00B1E68D /* QuizListController.swift */,
+				5A1D44AA1E94D1D70092DBF0 /* NewQuizController.swift */,
 				5A180DC11E80456800F9EE1A /* Question.swift */,
 				5A1D5D2B1E87A46C00714BBC /* Quiz.swift */,
 				5A1D5D2D1E88541B00714BBC /* QuizData.swift */,
@@ -226,6 +229,7 @@
 			files = (
 				5A1D5D2E1E88541B00714BBC /* QuizData.swift in Sources */,
 				5A208A1F1E7E75CB00B1E68D /* QuizListController.swift in Sources */,
+				5A1D44AB1E94D1D70092DBF0 /* NewQuizController.swift in Sources */,
 				5A180DC21E80456800F9EE1A /* Question.swift in Sources */,
 				5A1D5D2C1E87A46C00714BBC /* Quiz.swift in Sources */,
 				5A1D21951E86884F0099B077 /* JSONKeys.swift in Sources */,
