@@ -54,40 +54,11 @@
             </objects>
             <point key="canvasLocation" x="1502" y="117"/>
         </scene>
-        <!--New Quiz-->
-        <scene sceneID="aBR-53-Kdh">
-            <objects>
-                <tableViewController id="GYQ-OK-ji9" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pdt-X5-L6i">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ztc-uM-K5C">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ztc-uM-K5C" id="A9d-oN-YiK">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="GYQ-OK-ji9" id="VaY-cd-xDb"/>
-                            <outlet property="delegate" destination="GYQ-OK-ji9" id="O2Z-ej-yN8"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="New Quiz" id="p7t-UC-HKO"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pq5-m8-KFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2454" y="808"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="MCV-L3-dXb">
             <objects>
                 <navigationController id="UhT-Px-fhU" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="grn-oT-gyj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="grn-oT-gyj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -96,12 +67,31 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="GYQ-OK-ji9" kind="relationship" relationship="rootViewController" id="hZF-Jx-90p"/>
+                        <segue destination="2ci-bh-6fd" kind="relationship" relationship="rootViewController" id="fo6-4l-PYj"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WNu-YE-bjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1502" y="807"/>
+        </scene>
+        <!--New Quiz-->
+        <scene sceneID="wDl-KL-eW0">
+            <objects>
+                <viewController id="2ci-bh-6fd" customClass="NewQuizController" customModule="Quizzation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cvu-HO-5P1"/>
+                        <viewControllerLayoutGuide type="bottom" id="EKt-uJ-2Bj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rgx-WO-GfL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Quiz" id="xXT-rT-l5l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WeK-Pc-FSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2270" y="806"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bYK-dP-jPv">
