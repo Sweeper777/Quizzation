@@ -37,6 +37,7 @@ class QuizListController: UITableViewController {
         let quizData = quizzes[indexPath.row].data!
         let json = JSON(data: quizData as Data)
         cell.textLabel?.text = json[quizNameKey].string
+        return cell
     }
 }
 
