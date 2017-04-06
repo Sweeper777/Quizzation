@@ -1,7 +1,7 @@
 import SwiftyJSON
 import Foundation
 
-class Question {
+class Question: Equatable {
     let type: QuestionType
     let questionText: String
     let possibleAnswers: [String]
@@ -52,6 +52,10 @@ class Question {
         }
         
         return Question(type: QuestionType(rawValue: type)!, questionText: questionText, possibleAnswers: possibleAnswers, hint: json[hintKey].string)
+    }
+    
+    static func ==(lhs: Question, rhs: Question) -> Bool {
+        return lhs.toJSON() == rhs.toJSON()
     }
 }
 
