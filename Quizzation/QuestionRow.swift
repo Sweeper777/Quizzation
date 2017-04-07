@@ -18,8 +18,11 @@ class QuestionCell: LabelCellOf<Question> {
     }
 }
 
-class QuestionRow: Row<QuestionCell> {
+final class QuestionRow: Row<QuestionCell>, RowType {
     required init(tag: String?) {
         super.init(tag: tag)
+        displayValueFor = {
+            $0?.questionText ?? NSLocalizedString("Unnamed", comment: "")
+        }
     }
 }
