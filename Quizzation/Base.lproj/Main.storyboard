@@ -88,10 +88,52 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Quiz" id="xXT-rT-l5l"/>
+                    <connections>
+                        <segue destination="6wd-LY-YCJ" kind="presentation" modalPresentationStyle="formSheet" id="Xzr-uw-2iM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeK-Pc-FSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2270" y="806"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e7l-my-KYp">
+            <objects>
+                <navigationController id="6wd-LY-YCJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bpa-r2-rjl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="C1Y-p1-ZBn" kind="relationship" relationship="rootViewController" id="TTJ-Ls-bGe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cpd-5U-7D2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2270" y="1500"/>
+        </scene>
+        <!--Question Editor-->
+        <scene sceneID="koK-og-gfR">
+            <objects>
+                <viewController id="C1Y-p1-ZBn" customClass="QuestionEditorController" customModule="Quizzation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cWk-8P-nUV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tax-bc-PbX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BF4-VQ-laI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Question Editor" id="NeM-AX-q4x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bgn-OC-M3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3078" y="1499"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bYK-dP-jPv">
