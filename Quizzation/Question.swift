@@ -59,10 +59,21 @@ class Question: Equatable {
     }
 }
 
-enum QuestionType: Int {
+enum QuestionType: Int, CustomStringConvertible {
     case blank
     case singleMC
     case multipleMC
+    
+    var description: String {
+        switch self {
+        case .blank:
+            return NSLocalizedString("Fill In the Blank", comment: "")
+        case .singleMC:
+            return NSLocalizedString("Multiple Choice (Single Answer)", comment: "")
+        case .multipleMC:
+            return NSLocalizedString("Multiple Choice (Multiple Answers)", comment: "")
+        }
+    }
 }
 
 enum MultipleChoiceAnswer: Character {
