@@ -6,4 +6,13 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
     var onDismissCallback: ((UIViewController) -> ())?
     var row: RowOf<Question>!
     var completionCallback: ((UIViewController) -> ())?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    @IBAction func done() {
+        dismiss(animated: true, completion: nil)
+    }
 }

@@ -142,7 +142,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Question Editor" id="NeM-AX-q4x"/>
+                    <navigationItem key="navigationItem" title="Question Editor" id="NeM-AX-q4x">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="cVx-lv-Wom">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="done" destination="C1Y-p1-ZBn" id="hIy-9D-77q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bgn-OC-M3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
