@@ -89,10 +89,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Quiz" id="xXT-rT-l5l"/>
                     <connections>
-                        <segue destination="6wd-LY-YCJ" kind="presentation" modalPresentationStyle="formSheet" id="Xzr-uw-2iM"/>
+                        <segue destination="6wd-LY-YCJ" kind="presentation" identifier="showQuestionEditor" modalPresentationStyle="formSheet" id="Xzr-uw-2iM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeK-Pc-FSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="U96-sT-ybC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2270" y="806"/>
         </scene>
@@ -100,7 +101,7 @@
         <scene sceneID="e7l-my-KYp">
             <objects>
                 <navigationController id="6wd-LY-YCJ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bpa-r2-rjl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpa-r2-rjl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,6 +131,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Question Editor" id="NeM-AX-q4x"/>
+                    <connections>
+                        <segue destination="U96-sT-ybC" kind="unwind" unwindAction="unwindFromQuestionEditorWithSegue:" id="LcE-we-t0K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bgn-OC-M3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,4 +18,8 @@ class NewQuizController: FormViewController {
             row.value = Question(questionText: "What is my name?", possibleAnswers: ["Sweeper"])
         }
     }
+    
+    @IBAction func unwindFromQuestionEditor(segue: UIStoryboardSegue) {
+        
+    }
 }
