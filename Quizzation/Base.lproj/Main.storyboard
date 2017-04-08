@@ -87,7 +87,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Quiz" id="xXT-rT-l5l"/>
+                    <navigationItem key="navigationItem" title="New Quiz" id="xXT-rT-l5l">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nvK-DD-kx9">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="cancel" destination="2ci-bh-6fd" id="dQZ-zc-I6t"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Zd6-Fl-quw">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="done" destination="2ci-bh-6fd" id="ClP-x5-hEg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="6wd-LY-YCJ" kind="presentation" identifier="showQuestionEditor" modalPresentationStyle="formSheet" id="Xzr-uw-2iM"/>
                     </connections>

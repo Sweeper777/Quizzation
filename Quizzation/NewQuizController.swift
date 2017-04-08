@@ -22,4 +22,12 @@ class NewQuizController: FormViewController {
     @IBAction func unwindFromQuestionEditor(segue: UIStoryboardSegue) {
         
     }
+    
+    @IBAction func cancel() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func done() {
+        
+    }
 }
