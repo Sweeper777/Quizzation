@@ -106,7 +106,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeK-Pc-FSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="U96-sT-ybC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2270" y="806"/>
         </scene>
@@ -144,9 +143,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Question Editor" id="NeM-AX-q4x"/>
-                    <connections>
-                        <segue destination="U96-sT-ybC" kind="unwind" unwindAction="unwindFromQuestionEditorWithSegue:" id="LcE-we-t0K"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bgn-OC-M3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

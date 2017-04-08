@@ -12,15 +12,11 @@ class NewQuizController: FormViewController {
             row.cell.textField.textAlignment = .left
         }
         
-        form +++ QuestionRow("test") {
+        form +++ QuestionRow(tag: "test") {
             row in
             
             row.value = Question(questionText: "What is my name?", possibleAnswers: ["Sweeper"])
         }
-    }
-    
-    @IBAction func unwindFromQuestionEditor(segue: UIStoryboardSegue) {
-        
     }
     
     @IBAction func cancel() {
