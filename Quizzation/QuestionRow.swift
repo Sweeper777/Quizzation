@@ -5,6 +5,7 @@ final class QuestionRow: SelectorRow<PushSelectorCell<Question>, QuestionEditorC
     required init(tag: String?, _ initializer: ((QuestionRow) -> ())) {
         super.init(tag: tag)
         initializer(self)
+        title = self.value?.type.description
         presentationMode = PresentationMode.segueName(segueName: "showQuestionEditor", onDismiss: {
             _ in
         })
