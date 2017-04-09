@@ -23,6 +23,11 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             row in
         }
         
+        <<< TextRow(tagHint) {
+            row in
+            row.title = NSLocalizedString("Hint", comment: "")
+            row.cell.textField.placeholder = NSLocalizedString("Optional", comment: "")
+        }
     }
     
     @IBAction func done() {
