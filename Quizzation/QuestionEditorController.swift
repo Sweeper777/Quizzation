@@ -17,6 +17,12 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             row.title = NSLocalizedString("Type", comment: "")
         }
         
+        form +++ Section(NSLocalizedString("question", comment: ""))
+            
+        <<< TextAreaRow(tagQuestionText) {
+            row in
+        }
+        
     }
     
     @IBAction func done() {
