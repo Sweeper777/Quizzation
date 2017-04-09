@@ -10,6 +10,13 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        form +++ PickerInlineRow<QuestionType>(tagQuestionType) {
+            row in
+            row.options = [.blank, .singleMC, .multipleMC]
+            row.value = .blank
+            row.title = NSLocalizedString("Type", comment: "")
+        }
+        
     }
     
     @IBAction func done() {
