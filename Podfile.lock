@@ -2,11 +2,11 @@ PODS:
   - Base64nl (1.2)
   - Eureka (2.0.1)
   - MGSwipeTableCell (1.5.6)
-  - Realm (2.4.4):
-    - Realm/Headers (= 2.4.4)
-  - Realm/Headers (2.4.4)
-  - RealmSwift (2.4.4):
-    - Realm (= 2.4.4)
+  - Realm (2.5.1):
+    - Realm/Headers (= 2.5.1)
+  - Realm/Headers (2.5.1)
+  - RealmSwift (2.5.1):
+    - Realm (= 2.5.1)
   - SCLAlertView (0.7.0)
   - SwiftyJSON (3.1.4)
   - SwiftyUtils (0.7.0)
@@ -24,8 +24,8 @@ SPEC CHECKSUMS:
   Base64nl: a497bdcd1c01ea793d36b399016195a8713c0e95
   Eureka: ae837bb1dfae0c07bc1bda7aeef87876eeb537c2
   MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
-  Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
-  RealmSwift: 0c02b9f2d4be4301c497ed10e53a0580584eb1dd
+  Realm: 32f86104d37c8521f864d4274050b38ba6190733
+  RealmSwift: f719e7511c902b8908593e8f143f59e47931bdb6
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwiftyUtils: 87094996d977846e5a9f2cbe653ff28dc15ba187
