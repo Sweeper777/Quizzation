@@ -28,6 +28,15 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             row.title = NSLocalizedString("Hint", comment: "")
             row.cell.textField.placeholder = NSLocalizedString("Optional", comment: "")
         }
+        
+        form +++ Section(NSLocalizedString("answers", comment: "")) {
+            section in
+            section.hidden = Condition.function([tagQuestionType]) {
+                form in
+                let typeRow: RowOf<QuestionType> = form.rowBy(tag: tagQuestionType)!
+                return typeRow.value != .blank
+            }
+        }
     }
     
     @IBAction func done() {
