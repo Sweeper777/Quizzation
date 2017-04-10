@@ -13,7 +13,7 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
         form +++ PickerInlineRow<QuestionType>(tagQuestionType) {
             row in
             row.options = [.blank, .singleMC, .multipleMC]
-            row.value = .blank
+            row.value = self.row.value?.type ?? .blank
             row.title = NSLocalizedString("Type", comment: "")
         }
         
@@ -21,12 +21,14 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             
         <<< TextAreaRow(tagQuestionText) {
             row in
+            row.value = self.row.value?.questionText ?? ""
         }
-        
+            
         <<< TextRow(tagHint) {
             row in
             row.title = NSLocalizedString("Hint", comment: "")
             row.cell.textField.placeholder = NSLocalizedString("Optional", comment: "")
+            row.value = self.row.value?.hint ?? ""
         }
         
         form +++ Section(NSLocalizedString("answers", comment: "")) {
