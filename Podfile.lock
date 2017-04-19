@@ -1,6 +1,6 @@
 PODS:
   - Base64nl (1.2)
-  - Eureka (2.0.1)
+  - Eureka (3.0.0)
   - MGSwipeTableCell (1.5.6)
   - Realm (2.5.1):
     - Realm/Headers (= 2.5.1)
@@ -13,16 +13,26 @@ PODS:
 
 DEPENDENCIES:
   - Base64nl
-  - Eureka
+  - Eureka (from `https://github.com/xmartlabs/Eureka`, branch `master`)
   - MGSwipeTableCell
   - RealmSwift
   - SCLAlertView
   - SwiftyJSON
   - SwiftyUtils
 
+EXTERNAL SOURCES:
+  Eureka:
+    :branch: master
+    :git: https://github.com/xmartlabs/Eureka
+
+CHECKOUT OPTIONS:
+  Eureka:
+    :commit: cd0a057a2612286340e5b7f8ba5d06e6fcd4e2bd
+    :git: https://github.com/xmartlabs/Eureka
+
 SPEC CHECKSUMS:
   Base64nl: a497bdcd1c01ea793d36b399016195a8713c0e95
-  Eureka: ae837bb1dfae0c07bc1bda7aeef87876eeb537c2
+  Eureka: 5b9418d7bfdc21ca977d69d124a6409f3e9af2c7
   MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
   Realm: 32f86104d37c8521f864d4274050b38ba6190733
   RealmSwift: f719e7511c902b8908593e8f143f59e47931bdb6
@@ -30,6 +40,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwiftyUtils: 87094996d977846e5a9f2cbe653ff28dc15ba187
 
-PODFILE CHECKSUM: 6a1888b1343cb49aa145ea36d9433a9036970e2a
+PODFILE CHECKSUM: db8e941dcd7b5fcfe1b2fec15a4e8417972d5397
 
 COCOAPODS: 1.1.0.beta.1
