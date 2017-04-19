@@ -8,7 +8,7 @@ target 'Quizzation' do
   pod 'SCLAlertView'
   pod 'Base64nl'
   pod 'SwiftyJSON'
-  pod 'Eureka'
+  pod 'Eureka', git: 'git@github.com:xmartlabs/Eureka', branch: 'master'
   pod 'MGSwipeTableCell'
   pod 'RealmSwift'
 end
