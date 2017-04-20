@@ -132,7 +132,7 @@
         <!--Question Editor-->
         <scene sceneID="koK-og-gfR">
             <objects>
-                <viewController id="C1Y-p1-ZBn" customClass="QuestionEditorController" customModule="Quizzation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionEditor" id="C1Y-p1-ZBn" customClass="QuestionEditorController" customModule="Quizzation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cWk-8P-nUV"/>
                         <viewControllerLayoutGuide type="bottom" id="Tax-bc-PbX"/>
