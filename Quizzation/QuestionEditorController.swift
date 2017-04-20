@@ -7,10 +7,11 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
     var row: RowOf<Question>!
     var completionCallback: ((UIViewController) -> ())?
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let myNav: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
-        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.3529411765, green: 0.7333333333, blue: 0.3529411765, alpha: 1)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let myNav: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: 320,height: 50))
+        myNav.barTintColor = #colorLiteral(red: 0.3529411765, green: 0.7333333333, blue: 0.3529411765, alpha: 1)
+        myNav.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.view.addSubview(myNav)
         let cancelItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: nil)
         cancelItem.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -20,11 +21,6 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
         navigItem.rightBarButtonItem = doneItem
         navigItem.leftBarButtonItem = cancelItem
         myNav.items = [navigItem]
-
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
         form +++ PickerInlineRow<QuestionType>(tagQuestionType) {
             row in
