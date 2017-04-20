@@ -31,12 +31,27 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             row.value = self.row.value?.hint ?? ""
         }
         
-        form +++ Section(NSLocalizedString("answers", comment: "")) {
+        form +++ MultivaluedSection(multivaluedOptions: [.Insert, .Delete], header: NSLocalizedString("answers", comment: ""), footer: "") {
             section in
             section.hidden = Condition.function([tagQuestionType]) {
                 form in
                 let typeRow: RowOf<QuestionType> = form.rowBy(tag: tagQuestionType)!
                 return typeRow.value != .blank
+            }
+            
+            section.addButtonProvider = { _ in
+                return ButtonRow() {
+                    row in
+                    row.title = NSLocalizedString("Add New Answer", comment: "")
+                }
+            }
+            
+            section.multivaluedRowToInsertAt = {
+                index in
+                return TextRow() {
+                    row in
+                    row.cell.textField.placeholder = NSLocalizedString("Answer", comment: "")
+                }
             }
         }
     }
