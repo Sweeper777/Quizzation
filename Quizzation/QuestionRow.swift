@@ -6,7 +6,7 @@ final class QuestionRow: SelectorRow<PushSelectorCell<Question>, QuestionEditorC
         super.init(tag: tag)
         initializer(self)
         title = self.value?.type.description
-        presentationMode = PresentationMode.segueName(segueName: "showQuestionEditor", onDismiss: {
+        presentationMode = PresentationMode.presentModally(controllerProvider: ControllerProvider.storyBoard(storyboardId: "QuestionEditor", storyboardName: "Main", bundle: nil), onDismiss: {
             _ in
         })
         displayValueFor = {
