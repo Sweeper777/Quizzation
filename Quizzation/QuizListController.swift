@@ -9,7 +9,6 @@ class QuizListController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(self.navigationController?.navigationBar.height)
         quizzes = realm?.objects(QuizData.self)
     }
     
