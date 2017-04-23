@@ -17,6 +17,8 @@ class NewQuizController: FormViewController {
             
             row.value = Question(questionText: "What is my name?", possibleAnswers: ["Sweeper"])
         }
+        
+        print((self.view.subviews.filter { $0 is UIScrollView }.first as! UIScrollView).alignmentRectInsets)
     }
     
     @IBAction func cancel() {
