@@ -23,6 +23,8 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
         navigItem.leftBarButtonItem = cancelItem
         myNav.items = [navigItem]
         
+        tableView.contentInset = UIEdgeInsets(top: 44 + UIScreen.screenStatusBarHeight, left: 0, bottom: 0, right: 0)
+        
         form +++ PickerInlineRow<QuestionType>(tagQuestionType) {
             row in
             row.options = [.blank, .singleMC, .multipleMC]
