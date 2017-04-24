@@ -82,6 +82,11 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             }
         }
         
+        <<< SegmentedRow<MultipleChoiceAnswer>(tagMCSingleAnswer) {
+            row in
+            row.options = [.a, .b, .c, .d]
+            row.value = .a
+        }
     }
     
     func cancel() {
