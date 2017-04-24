@@ -14,9 +14,9 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
         myNav.barTintColor = #colorLiteral(red: 0.3529411765, green: 0.7333333333, blue: 0.3529411765, alpha: 1)
         myNav.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.view.addSubview(myNav)
-        let cancelItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: nil)
+        let cancelItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
         cancelItem.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        let doneItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: nil)
+        let doneItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
         doneItem.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         let navigItem: UINavigationItem = UINavigationItem(title: NSLocalizedString("Question Editor", comment: ""))
         navigItem.rightBarButtonItem = doneItem
@@ -71,7 +71,11 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
         }
     }
     
-    @IBAction func done() {
+    func cancel() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func done() {
+        
     }
 }
