@@ -70,6 +70,18 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             }
             section.tag = tagFIBAnswersSection
         }
+        
+        form +++ Section(NSLocalizedString("answer", comment: "")) {
+            section in
+            section.tag = tagMCSingleAnswerSection
+            
+            section.hidden = Condition.function([tagQuestionType]) {
+                form in
+                let typeRow: RowOf<QuestionType> = form.rowBy(tag: tagQuestionType)!
+                return typeRow.value != .singleMC
+            }
+        }
+        
     }
     
     func cancel() {
