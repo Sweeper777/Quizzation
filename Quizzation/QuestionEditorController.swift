@@ -87,6 +87,17 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             row.options = [.a, .b, .c, .d]
             row.value = .a
         }
+        
+        form +++ Section(NSLocalizedString("answers", comment: "")) {
+            section in
+            section.tag = tagMCMultipleAnswersSection
+            
+            section.hidden = Condition.function([tagQuestionType]) {
+                form in
+                let typeRow: RowOf<QuestionType> = form.rowBy(tag: tagQuestionType)!
+                return typeRow.value != .multipleMC
+            }
+        }
     }
     
     func cancel() {

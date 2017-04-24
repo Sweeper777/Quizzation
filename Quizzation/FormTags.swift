@@ -8,3 +8,4 @@ let tagMCSingleAnswer = "mcSingleAnswer"
 
 let tagFIBAnswersSection = "fibAnswersSection"
 let tagMCSingleAnswerSection = "mcSingleAnswerSection"
+let tagMCMultipleAnswersSection = "mcMultipleAnswersSection"
