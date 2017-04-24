@@ -77,8 +77,8 @@ enum QuestionType: Int, CustomStringConvertible {
 }
 
 enum MultipleChoiceAnswer: Character {
-    case a = "a"
-    case b = "b"
-    case c = "c"
-    case d = "d"
+    case a = "A"
+    case b = "B"
+    case c = "C"
+    case d = "D"
 }
