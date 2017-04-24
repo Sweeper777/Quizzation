@@ -4,4 +4,7 @@ let tagQuestionType = "questionType"
 let tagQuestionText = "questionText"
 let tagHint = "hint"
 
-let tagFIBAnswers = "fibAnswers"
+let tagMCSingleAnswer = "mcSingleAnswer"
+
+let tagFIBAnswersSection = "fibAnswersSection"
+let tagMCSingleAnswerSection = "mcSingleAnswerSection"

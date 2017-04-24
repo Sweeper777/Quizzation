@@ -68,7 +68,7 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
                     row.cell.textField.placeholder = NSLocalizedString("Answer", comment: "")
                 }
             }
-            section.tag = tagFIBAnswers
+            section.tag = tagFIBAnswersSection
         }
     }
     
