@@ -7,26 +7,7 @@ class Question: Equatable {
     let possibleAnswers: [String]
     let hint: String?
     
-    init(questionText: String, possibleAnswers: [String], hint: String? = nil) {
-        self.type = .blank
-        self.questionText = questionText
-        self.possibleAnswers = possibleAnswers
-        self.hint = hint
-    }
-    
-    init(questionText: String, answers: [MultipleChoiceAnswer], hint: String? = nil, requiresAllAnswers: Bool) {
-        if requiresAllAnswers {
-            self.type = .multipleMC
-            self.possibleAnswers = [answers.map { $0.rawValue.description }.sorted().joined(separator: "")]
-        } else {
-            self.type = .singleMC
-            self.possibleAnswers = answers.map { $0.rawValue.description }
-        }
-        self.questionText = questionText
-        self.hint = hint
-    }
-    
-    private init(type: QuestionType, questionText: String, possibleAnswers: [String], hint: String?) {
+    init(type: QuestionType, questionText: String, possibleAnswers: [String], hint: String?) {
         self.type = type
         self.questionText = questionText
         self.possibleAnswers = possibleAnswers
