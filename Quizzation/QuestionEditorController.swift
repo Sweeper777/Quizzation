@@ -98,6 +98,13 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
                 return typeRow.value != .multipleMC
             }
         }
+        
+        for choice in [MultipleChoiceAnswer.a, .b, .c, .d] {
+            form.sectionBy(tag: tagMCMultipleAnswersSection)! <<< CheckRow(tagMCMultipleAnswers + choice.rawValue.description) {
+                row in
+                row.title = choice.rawValue.description
+            }
+        }
     }
     
     func cancel() {
