@@ -81,7 +81,7 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             }
         }
         
-        form +++ Section(NSLocalizedString("answer", comment: "")) {
+        form +++ Section(NSLocalizedString("answers", comment: "")) {
             section in
             section.tag = tagMCSingleAnswerSection
             
@@ -96,6 +96,9 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             form.sectionBy(tag: tagMCSingleAnswerSection)! <<< CheckRow(tagMCSingleAnswer + choice.rawValue.description) {
                 row in
                 row.title = choice.rawValue.description
+                if self.row.value?.type == .singleMC {
+                    row.value = self.row.value!.possibleAnswers.contains(choice.rawValue.description)
+                }
             }
         }
         
@@ -114,6 +117,9 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             form.sectionBy(tag: tagMCMultipleAnswersSection)! <<< CheckRow(tagMCMultipleAnswers + choice.rawValue.description) {
                 row in
                 row.title = choice.rawValue.description
+                if self.row.value?.type == .multipleMC {
+                    row.value = self.row.value!.possibleAnswers.contains(choice.rawValue.description)
+                }
             }
         }
     }
