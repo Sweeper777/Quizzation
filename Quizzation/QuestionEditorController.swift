@@ -69,6 +69,16 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
                 }
             }
             section.tag = tagFIBAnswersSection
+            
+            if row.value?.type == .blank {
+                for answer in row.value?.possibleAnswers ?? [] {
+                    section <<< TextRow() {
+                        row in
+                        row.cell.textField.placeholder = NSLocalizedString("Answer", comment: "")
+                        row.value = answer
+                    }
+                }
+            }
         }
         
         form +++ Section(NSLocalizedString("answer", comment: "")) {
