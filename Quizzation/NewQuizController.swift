@@ -15,7 +15,7 @@ class NewQuizController: FormViewController {
         form +++ QuestionRow(tag: "test") {
             row in
             
-            row.value = Question(questionText: "What is my name?", possibleAnswers: ["Sweeper"])
+            row.value = Question(type: .blank, questionText: "What is my name?", possibleAnswers: ["Sweeper", "Sweeper777"], hint: nil)
         }
     }
     
