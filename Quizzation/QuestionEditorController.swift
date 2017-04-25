@@ -82,10 +82,11 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             }
         }
         
-        <<< SegmentedRow<MultipleChoiceAnswer>(tagMCSingleAnswer) {
-            row in
-            row.options = [.a, .b, .c, .d]
-            row.value = .a
+        for choice in [MultipleChoiceAnswer.a, .b, .c, .d] {
+            form.sectionBy(tag: tagMCSingleAnswerSection)! <<< CheckRow(tagMCSingleAnswer + choice.rawValue.description) {
+                row in
+                row.title = choice.rawValue.description
+            }
         }
         
         form +++ Section(NSLocalizedString("answers", comment: "")) {
