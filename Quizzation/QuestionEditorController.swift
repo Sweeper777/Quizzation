@@ -10,7 +10,7 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let myNav: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: 320,height: 44 + UIScreen.screenStatusBarHeight))
+        let myNav: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.screenWidth, height: 44 + UIScreen.screenStatusBarHeight))
         myNav.barTintColor = #colorLiteral(red: 0.3529411765, green: 0.7333333333, blue: 0.3529411765, alpha: 1)
         myNav.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.view.addSubview(myNav)
