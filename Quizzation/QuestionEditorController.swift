@@ -129,6 +129,16 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
     }
     
     func done() {
+        let values = form.values(includeHidden: false)
+        let answersSection: Section
+        switch values[tagQuestionType] as! QuestionType {
+        case .blank:
+            answersSection = form.sectionBy(tag: tagFIBAnswersSection)!
+        case .multipleMC:
+            answersSection = form.sectionBy(tag: tagMCMultipleAnswersSection)!
+        case .singleMC:
+            answersSection = form.sectionBy(tag: tagMCSingleAnswerSection)!
+        }
         
     }
 }
