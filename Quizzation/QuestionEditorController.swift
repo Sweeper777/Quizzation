@@ -1,6 +1,7 @@
 import UIKit
 import Eureka
 import SwiftyUtils
+import SCLAlertView
 
 class QuestionEditorController: FormViewController, TypedRowControllerType {
     typealias RowValue = Question
@@ -129,6 +130,12 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
     }
     
     func done() {
+        func error() {
+            let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton:false))
+            alert.addButton(NSLocalizedString("OK", comment: ""), action: {})
+            alert.showError(NSLocalizedString("Error", comment: ""), subTitle: NSLocalizedString("Please add at least one answer!", comment: ""))
+        }
+        
         let values = form.values(includeHidden: false)
         let answersSection: Section
         switch values[tagQuestionType] as! QuestionType {
@@ -150,6 +157,11 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             } else if row.baseValue is Bool {
                 possibleAnswers.append(row.title!)
             }
+        }
+        
+        if possibleAnswers.isEmpty {
+            error()
+            return
         }
         
         self.row.value = Question(type: questionType, questionText: questionText, possibleAnswers: possibleAnswers, hint: hint)
