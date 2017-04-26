@@ -140,5 +140,19 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
             answersSection = form.sectionBy(tag: tagMCSingleAnswerSection)!
         }
         
+        let questionType = values[tagQuestionType] as! QuestionType
+        let questionText = (values[tagQuestionText] as? String) ?? ""
+        let hint = values[tagHint] as? String
+        var possibleAnswers = [String]()
+        for row in answersSection {
+            if row.baseValue is String {
+                possibleAnswers.append(row.baseValue as! String)
+            } else if row.baseValue is Bool {
+                possibleAnswers.append(row.title!)
+            }
+        }
+        
+        self.row.value = Question(type: questionType, questionText: questionText, possibleAnswers: possibleAnswers, hint: hint)
+        dismiss(animated: true, completion: nil)
     }
 }
