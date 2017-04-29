@@ -6,6 +6,7 @@ class NewQuizController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         form +++ TextRow(tagName) {
             row in
             row.title = NSLocalizedString("Name", comment: "")
@@ -30,6 +31,7 @@ class NewQuizController: FormViewController {
                     row.title = row.value?.type.description ?? NSLocalizedString("Blank Question", comment: "")
                 }
             }
+            section.tag = tagQuestionsSection
         }
     }
     

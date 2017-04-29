@@ -10,3 +10,5 @@ let tagMCMultipleAnswers = "mcMultipleAnswers"
 let tagFIBAnswersSection = "fibAnswersSection"
 let tagMCSingleAnswerSection = "mcSingleAnswerSection"
 let tagMCMultipleAnswersSection = "mcMultipleAnswersSection"
+
+let tagQuestionsSection = "questionsSection"
