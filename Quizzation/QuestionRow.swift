@@ -1,7 +1,7 @@
 import UIKit
 import Eureka
 
-final class QuestionRow: SelectorRow<PushSelectorCell<Question>, QuestionEditorController> {
+final class QuestionRow: SelectorRow<PushSelectorCell<Question>, QuestionEditorController>, RowType {
     required init(tag: String?, _ initializer: ((QuestionRow) -> ())) {
         super.init(tag: tag)
         initializer(self)
@@ -13,6 +13,7 @@ final class QuestionRow: SelectorRow<PushSelectorCell<Question>, QuestionEditorC
             $0?.questionText ?? NSLocalizedString("Tap to edit", comment: "")
         }
     }
+    
     required convenience init(tag: String?) {
         self.init(tag: tag)
     }
