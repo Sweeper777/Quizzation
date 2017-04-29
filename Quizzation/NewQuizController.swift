@@ -1,5 +1,6 @@
 import UIKit
 import Eureka
+import SCLAlertView
 
 class NewQuizController: FormViewController {
 
@@ -32,6 +33,7 @@ class NewQuizController: FormViewController {
                 }
             }
             section.tag = tagQuestionsSection
+            
         }
     }
     
@@ -40,6 +42,21 @@ class NewQuizController: FormViewController {
     }
     
     @IBAction func done() {
+        let values = form.values()
+        if let name = values[tagName] as? String {
+            if name.trimmed() == "" {
+                let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton:false))
+                alert.addButton(NSLocalizedString("OK", comment: ""), action: {})
+                alert.showError(NSLocalizedString("Error", comment: ""), subTitle: NSLocalizedString("Name cannot be blank!", comment: ""))
+                return
+            } else {
+            }
+        } else {
+            let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton:false))
+            alert.addButton(NSLocalizedString("OK", comment: ""), action: {})
+            alert.showError(NSLocalizedString("Error", comment: ""), subTitle: NSLocalizedString("Name cannot be blank!", comment: ""))
+            return
+        }
         
     }
 }
