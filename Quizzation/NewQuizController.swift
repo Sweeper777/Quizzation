@@ -50,6 +50,13 @@ class NewQuizController: FormViewController {
                 alert.showError(NSLocalizedString("Error", comment: ""), subTitle: NSLocalizedString("Name cannot be blank!", comment: ""))
                 return
             } else {
+                let section = form.sectionBy(tag: tagQuestionsSection)!
+                var questions = [Question]()
+                for row in section {
+                    if let value = row.baseValue as? Question {
+                        questions.append(value)
+                    }
+                }
             }
         } else {
             let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton:false))
