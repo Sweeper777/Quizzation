@@ -1,6 +1,7 @@
 import UIKit
 import Eureka
 import SCLAlertView
+import RealmSwift
 
 class NewQuizController: FormViewController {
 
@@ -64,6 +65,13 @@ class NewQuizController: FormViewController {
                     return
                 }
                 
+                let quiz = Quiz(name: name, questions: questions)
+                let realm = try! Realm()
+                let quizData = QuizData()
+                quizData.data = try! quiz.toJSON().rawData() as NSData?
+                try? realm.write {
+                    realm.add(quizData)
+                }
                 performSegue(withIdentifier: "unwind", sender: self)
             }
         } else {
