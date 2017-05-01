@@ -32,6 +32,11 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
     @IBAction func unwindFromNewQuiz(segue: UIStoryboardSegue) {
         tableView.reloadData()
     }
