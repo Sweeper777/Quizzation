@@ -64,6 +64,7 @@ class NewQuizController: FormViewController {
                     return
                 }
                 
+                performSegue(withIdentifier: "unwind", sender: self)
             }
         } else {
             let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton:false))

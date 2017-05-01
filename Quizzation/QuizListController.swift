@@ -27,5 +27,7 @@ class QuizListController: UITableViewController {
         cell.textLabel?.text = json[quizNameKey].string
         return cell
     }
+    @IBAction func unwindFromNewQuiz(segue: UIStoryboardSegue) {
+    }
 }
 

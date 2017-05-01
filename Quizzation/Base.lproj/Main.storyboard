@@ -51,6 +51,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H99-As-32j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Wz3-I6-Auj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1502" y="117"/>
         </scene>
@@ -103,6 +104,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="6wd-LY-YCJ" kind="presentation" identifier="showQuestionEditor" modalPresentationStyle="formSheet" id="Xzr-uw-2iM"/>
+                        <segue destination="Wz3-I6-Auj" kind="unwind" identifier="unwind" unwindAction="unwindFromNewQuizWithSegue:" id="gmG-nI-LZb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeK-Pc-FSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
