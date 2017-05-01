@@ -57,6 +57,13 @@ class NewQuizController: FormViewController {
                         questions.append(value)
                     }
                 }
+                if questions.isEmpty {
+                    let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton:false))
+                    alert.addButton(NSLocalizedString("OK", comment: ""), action: {})
+                    alert.showError(NSLocalizedString("Error", comment: ""), subTitle: NSLocalizedString("Please add at least one question!", comment: ""))
+                    return
+                }
+                
             }
         } else {
             let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton:false))
