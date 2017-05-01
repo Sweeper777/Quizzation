@@ -28,6 +28,7 @@ class QuizListController: UITableViewController {
         return cell
     }
     @IBAction func unwindFromNewQuiz(segue: UIStoryboardSegue) {
+        tableView.reloadData()
     }
 }
 
