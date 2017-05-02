@@ -49,6 +49,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="ZW6-gb-En3" kind="presentation" identifier="doQuiz" id="ljs-u9-abL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H99-As-32j" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Wz3-I6-Auj" userLabel="Exit" sceneMemberID="exit"/>
@@ -74,6 +77,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WNu-YE-bjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1502" y="807"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fRd-n4-OUI">
+            <objects>
+                <navigationController id="ZW6-gb-En3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="CQ8-HD-UbG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qfc-mH-cah" kind="relationship" relationship="rootViewController" id="scq-kl-SFj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxv-7I-FMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2270" y="116"/>
+        </scene>
+        <!--Quiz Controller-->
+        <scene sceneID="MqS-sf-XQf">
+            <objects>
+                <viewController id="Qfc-mH-cah" customClass="QuizController" customModule="Quizzation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Fm-9v-Spi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Es8-9e-cfI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5fL-au-Xed">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Q7-Mr-bdq">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="IFS-r9-Ge0">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="done" destination="Qfc-mH-cah" id="38n-kr-crC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="obX-GY-mIe">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="submit" destination="Qfc-mH-cah" id="GH3-lC-q0Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amV-9Q-ZTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2990" y="116"/>
         </scene>
         <!--New Quiz-->
         <scene sceneID="wDl-KL-eW0">
