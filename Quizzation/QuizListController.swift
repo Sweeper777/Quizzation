@@ -34,7 +34,9 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let quizData = quizzes[indexPath.row]
+        let quiz = Quiz.from(json: JSON(data: quizData.data as! Data))
+        performSegue(withIdentifier: "doQuiz", sender: quiz)
     }
     
     @IBAction func unwindFromNewQuiz(segue: UIStoryboardSegue) {
