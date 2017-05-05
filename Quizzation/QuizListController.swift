@@ -39,6 +39,12 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
         performSegue(withIdentifier: "doQuiz", sender: quiz)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let quiz = sender as? Quiz else { return }
+        guard let vc = (segue.destination as? UINavigationController)?.topViewController as? QuizController else { return }
+        vc.quiz = quiz
+    }
+    
     @IBAction func unwindFromNewQuiz(segue: UIStoryboardSegue) {
         tableView.reloadData()
     }
