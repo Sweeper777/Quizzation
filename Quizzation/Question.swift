@@ -24,7 +24,7 @@ class Question: Equatable {
     }
     
     static func from(json: JSON) -> Question? {
-        guard let type = json["type"].int else { return nil }
+        guard let type = json[questionTypeKey].int else { return nil }
         guard let questionText = json[questionTextKey].string else { return nil }
         guard let possibleAnswersJSON = json[possibleAnswersKey].array else { return nil }
         let possibleAnswers = possibleAnswersJSON.map { $0.string }.filter { $0 != nil }.map { $0! }
