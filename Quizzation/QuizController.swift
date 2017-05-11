@@ -17,6 +17,11 @@ class QuizController: FormViewController {
             form +++ questionSection
             switch question.type {
             case .blank:
+                questionSection <<< TextRow("answer\(index)") {
+                    row in
+                    row.title = NSLocalizedString("Answer", comment: "")
+                    row.cell.textField.placeholder = NSLocalizedString("Type here", comment: "")
+                }
             case .multipleMC:
             case .singleMC:
             if let hint = question.hint {
