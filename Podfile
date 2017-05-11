@@ -11,4 +11,5 @@ target 'Quizzation' do
   pod 'Eureka'
   pod 'MGSwipeTableCell'
   pod 'RealmSwift'
+  pod 'MultiSelectSegmentedControl'
 end

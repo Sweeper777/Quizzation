@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F1B4EBDFE3A0C7920208EE24630FB55"
-               BuildableName = "RealmSwift.framework"
-               BlueprintName = "RealmSwift"
+               BlueprintIdentifier = "6C917119E6D5B6E56D4EC81E9DF161ED"
+               BuildableName = "MultiSelectSegmentedControl.framework"
+               BlueprintName = "MultiSelectSegmentedControl"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0F1B4EBDFE3A0C7920208EE24630FB55"
-            BuildableName = "RealmSwift.framework"
-            BlueprintName = "RealmSwift"
+            BlueprintIdentifier = "6C917119E6D5B6E56D4EC81E9DF161ED"
+            BuildableName = "MultiSelectSegmentedControl.framework"
+            BlueprintName = "MultiSelectSegmentedControl"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
