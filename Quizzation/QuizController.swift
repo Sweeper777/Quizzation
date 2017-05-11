@@ -19,6 +19,12 @@ class QuizController: FormViewController {
             case .blank:
             case .multipleMC:
             case .singleMC:
+            if let hint = question.hint {
+                questionSection <<< ButtonRow() {
+                    row in
+                    row.title = NSLocalizedString("Show Hint", comment: "")
+                }
+                }
             }
         }
     }
