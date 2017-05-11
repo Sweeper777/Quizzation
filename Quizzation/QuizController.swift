@@ -24,6 +24,14 @@ class QuizController: FormViewController {
                     row in
                     row.title = NSLocalizedString("Show Hint", comment: "")
                 }
+                    .onCellSelection {
+                    cell, row in
+                    row.hidden = true
+                    row.evaluateHidden()
+                    questionSection <<< LabelRow() {
+                        row in
+                        row.title = NSLocalizedString("Hint:", comment: "") + " " + hint
+                    }
                 }
             }
         }
