@@ -28,6 +28,11 @@ class QuizController: FormViewController {
                     row.title = NSLocalizedString("Answer", comment: "")
                 }
             case .singleMC:
+                questionSection <<< SingleSelectSegmentedRow("answer\(index)") {
+                    row in
+                    row.title = NSLocalizedString("Answer", comment: "")
+                }
+            }
             if let hint = question.hint {
                 questionSection <<< ButtonRow() {
                     row in
