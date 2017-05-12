@@ -23,6 +23,10 @@ class QuizController: FormViewController {
                     row.cell.textField.placeholder = NSLocalizedString("Type here", comment: "")
                 }
             case .multipleMC:
+                questionSection <<< MultiSelectSegmentedRow("answer\(index)") {
+                    row in
+                    row.title = NSLocalizedString("Answer", comment: "")
+                }
             case .singleMC:
             if let hint = question.hint {
                 questionSection <<< ButtonRow() {
