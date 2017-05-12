@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nTM-Ar-CPr" customClass="SingleSelectSegmentedCell" customModule="Quizzation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nTM-Ar-CPr" id="u6R-bW-gdA">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="q1V-WF-1gh">
+                        <rect key="frame" x="243" y="7" width="124" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="124" id="Z9l-3S-417"/>
+                        </constraints>
+                        <segments>
+                            <segment title="A"/>
+                            <segment title="B"/>
+                            <segment title="C"/>
+                            <segment title="D"/>
+                        </segments>
+                        <connections>
+                            <action selector="valueChange" destination="nTM-Ar-CPr" eventType="valueChanged" id="VR5-B6-RRU"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q1V-WF-1gh" firstAttribute="trailing" secondItem="u6R-bW-gdA" secondAttribute="trailingMargin" id="9JM-dt-cZV"/>
+                    <constraint firstItem="q1V-WF-1gh" firstAttribute="bottom" secondItem="u6R-bW-gdA" secondAttribute="bottomMargin" id="ev2-R2-OfI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="segmentedControl" destination="q1V-WF-1gh" id="wKz-LL-kcC"/>
+            </connections>
+            <point key="canvasLocation" x="12.5" y="278"/>
+        </tableViewCell>
+    </objects>
+</document>
