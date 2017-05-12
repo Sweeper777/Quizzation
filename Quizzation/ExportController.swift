@@ -15,6 +15,10 @@ class ExportController: FormViewController {
                 row.cell.textLabel?.font = UIFont(name: "Courier New", size: 16)
                 row.title = quizData.base64EncodedString()
         }
+            <<< ButtonRow() {
+                row in
+                row.title = "Share"
+        }
     }
 
 }
