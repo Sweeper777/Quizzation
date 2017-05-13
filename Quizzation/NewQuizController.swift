@@ -28,6 +28,7 @@ class NewQuizController: FormViewController {
                 _ in return QuestionRow(tag: nil) {
                     row in
                     row.value = nil
+                    row.cellStyle = .subtitle
                 }.onChange {
                     row in
                     row.title = row.value?.type.description ?? NSLocalizedString("Blank Question", comment: "")
