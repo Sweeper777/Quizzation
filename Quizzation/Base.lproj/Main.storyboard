@@ -51,6 +51,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="ZW6-gb-En3" kind="presentation" identifier="doQuiz" id="ljs-u9-abL"/>
+                        <segue destination="zJG-bx-ONU" kind="presentation" modalPresentationStyle="formSheet" id="Mp7-AU-9up"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H99-As-32j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -76,13 +77,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WNu-YE-bjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1502" y="807"/>
+            <point key="canvasLocation" x="879" y="1137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fRd-n4-OUI">
             <objects>
                 <navigationController id="ZW6-gb-En3" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="CQ8-HD-UbG">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CQ8-HD-UbG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -164,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeK-Pc-FSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270" y="806"/>
+            <point key="canvasLocation" x="1775" y="1137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e7l-my-KYp">
@@ -184,7 +185,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cpd-5U-7D2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270" y="1500"/>
+            <point key="canvasLocation" x="1774" y="1881"/>
         </scene>
         <!--Question Editor-->
         <scene sceneID="koK-og-gfR">
@@ -210,7 +211,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bgn-OC-M3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3078" y="1499"/>
+            <point key="canvasLocation" x="2562" y="1881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FFt-lq-Qmz">
+            <objects>
+                <navigationController id="zJG-bx-ONU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mvh-wk-UjF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lYg-jo-dkP" kind="relationship" relationship="rootViewController" id="o4Y-tb-v6b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBP-ZQ-Kuu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2527" y="1124"/>
+        </scene>
+        <!--Export-->
+        <scene sceneID="ren-RH-CZ9">
+            <objects>
+                <viewController id="lYg-jo-dkP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tJ8-pt-wvd"/>
+                        <viewControllerLayoutGuide type="bottom" id="EeJ-zj-64p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="535-WC-0Kb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Export" id="zMm-Wx-8me">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="XrL-os-Ojw">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p3J-JE-Zev" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3329" y="1124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bYK-dP-jPv">
