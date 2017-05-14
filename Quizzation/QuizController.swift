@@ -77,6 +77,8 @@ class QuizController: FormViewController {
                     correctAnswers += 1
                 }
             }
+            if row.section!.last! is LabelRow {
+                hintUsed += 1
             }
         }
     }
