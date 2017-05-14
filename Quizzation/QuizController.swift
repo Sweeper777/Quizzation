@@ -56,6 +56,13 @@ class QuizController: FormViewController {
     }
     
     @IBAction func submit() {
-        
+        var correctAnswers = 0
+        var hintUsed = 0
+        for (index, question) in quiz.questions.enumerated() {
+            let row = form.rowBy(tag: "answer\(index)")!
+            switch question.type {
+            case .blank:
+            case .multipleMC:
+            }
     }
 }
