@@ -67,6 +67,11 @@ class QuizController: FormViewController {
                     correctAnswers += 1
                 }
             case .multipleMC:
+                guard let answer = ((row.baseValue as? NSMutableArray)?.map { $0 as? String }) else { continue }
+                if Set(question.possibleAnswers) == Set(answer.filter { $0 != nil }.map { $0! }) {
+                    correctAnswers += 1
+                }
             }
+        }
     }
 }
