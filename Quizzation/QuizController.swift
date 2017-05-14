@@ -71,6 +71,12 @@ class QuizController: FormViewController {
                 if Set(question.possibleAnswers) == Set(answer.filter { $0 != nil }.map { $0! }) {
                     correctAnswers += 1
                 }
+            case .singleMC:
+                guard let answer = row.baseValue as? Character else { continue }
+                if question.possibleAnswers.contains(answer.description) {
+                    correctAnswers += 1
+                }
+            }
             }
         }
     }
