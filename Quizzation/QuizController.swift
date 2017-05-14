@@ -62,6 +62,10 @@ class QuizController: FormViewController {
             let row = form.rowBy(tag: "answer\(index)")!
             switch question.type {
             case .blank:
+                guard let answer = row.baseValue as? String else { continue }
+                if question.possibleAnswers.contains(answer) {
+                    correctAnswers += 1
+                }
             case .multipleMC:
             }
     }
