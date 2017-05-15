@@ -51,7 +51,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="ZW6-gb-En3" kind="presentation" identifier="doQuiz" id="ljs-u9-abL"/>
-                        <segue destination="zJG-bx-ONU" kind="presentation" modalPresentationStyle="formSheet" id="Mp7-AU-9up"/>
+                        <segue destination="zJG-bx-ONU" kind="presentation" identifier="export" modalPresentationStyle="formSheet" id="Mp7-AU-9up"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H99-As-32j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -126,6 +126,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="CYN-6D-tSo" kind="presentation" modalPresentationStyle="formSheet" id="McH-fL-4D3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amV-9Q-ZTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,7 +220,7 @@
         <scene sceneID="FFt-lq-Qmz">
             <objects>
                 <navigationController id="zJG-bx-ONU" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mvh-wk-UjF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mvh-wk-UjF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -236,7 +239,7 @@
         <!--Export-->
         <scene sceneID="ren-RH-CZ9">
             <objects>
-                <viewController id="lYg-jo-dkP" sceneMemberID="viewController">
+                <viewController id="lYg-jo-dkP" customClass="ExportController" customModule="Quizzation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tJ8-pt-wvd"/>
                         <viewControllerLayoutGuide type="bottom" id="EeJ-zj-64p"/>
@@ -249,6 +252,9 @@
                     <navigationItem key="navigationItem" title="Export" id="zMm-Wx-8me">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="XrL-os-Ojw">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="done" destination="lYg-jo-dkP" id="zao-DU-hsw"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
