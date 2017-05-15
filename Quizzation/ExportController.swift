@@ -4,16 +4,18 @@ import Base64nl
 
 class ExportController: FormViewController {
     var quizData: Data!
+    var base64String: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        base64String = quizData.base64EncodedString()
         
         form +++ Section(header: "", footer: NSLocalizedString("Share this and others can import the quiz using the code", comment: ""))
             <<< LabelRow(tagExportText) {
                 row in
                 row.cell.textLabel?.numberOfLines = 0
                 row.cell.textLabel?.font = UIFont(name: "Courier New", size: 16)
-                row.title = quizData.base64EncodedString()
+                row.title = self.base64String
         }
             <<< ButtonRow() {
                 row in
