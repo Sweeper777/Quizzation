@@ -20,6 +20,10 @@ class ExportController: FormViewController {
             <<< ButtonRow() {
                 row in
                 row.title = "Share"
+            }.onCellSelection {
+                cell, row in
+                let activityViewController = UIActivityViewController(activityItems: [self.base64String], applicationActivities: nil)
+                self.navigationController?.present(activityViewController, animated: true)
         }
     }
 
