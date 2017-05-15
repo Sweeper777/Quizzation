@@ -25,6 +25,11 @@ class ExportController: FormViewController {
                 let activityViewController = UIActivityViewController(activityItems: [self.base64String], applicationActivities: nil)
                 self.navigationController?.present(activityViewController, animated: true)
         }
+        
+    }
+    
+    @IBAction func done() {
+        dismiss(animated: true, completion: nil)
     }
 
 }
