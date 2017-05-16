@@ -134,6 +134,52 @@
             </objects>
             <point key="canvasLocation" x="2990" y="116"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rSK-lp-BxK">
+            <objects>
+                <navigationController id="CYN-6D-tSo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3wV-1y-7jD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vSC-wZ-Oau" kind="relationship" relationship="rootViewController" id="3sc-jP-YW4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0A2-rf-xcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3823" y="116"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="qWj-h4-S2j">
+            <objects>
+                <viewController id="vSC-wZ-Oau" customClass="QuizResultsController" customModule="Quizzation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GvZ-Xa-YCa"/>
+                        <viewControllerLayoutGuide type="bottom" id="zk7-Tv-OPt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Cl-zq-Zdr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Results" id="04d-XA-FFg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="kRS-lS-ghS">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="done" destination="vSC-wZ-Oau" id="pcC-dh-0IV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEG-C9-lBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4596" y="116"/>
+        </scene>
         <!--New Quiz-->
         <scene sceneID="wDl-KL-eW0">
             <objects>
