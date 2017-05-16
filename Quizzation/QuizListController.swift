@@ -43,9 +43,13 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let quiz = sender as? Quiz else { return }
-        guard let vc = (segue.destination as? UINavigationController)?.topViewController as? QuizController else { return }
-        vc.quiz = quiz
+        if let quiz = sender as? Quiz, let vc = (segue.destination as? UINavigationController)?.topViewController as? QuizController {
+            vc.quiz = quiz
+        }
+        
+        if let data = sender as? Data, let vc = (segue.destination as? UINavigationController)?.topViewController as? ExportController {
+            vc.quizData = data
+        }
     }
     
     @IBAction func unwindFromNewQuiz(segue: UIStoryboardSegue) {

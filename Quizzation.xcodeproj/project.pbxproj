@@ -17,6 +17,7 @@
 		5A1DBE791EB72108006FB612 /* ExportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1DBE781EB72108006FB612 /* ExportController.swift */; };
 		5A1E02B51EBF031B00BF72E9 /* SingleSelectSegmentedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E02B31EBF031B00BF72E9 /* SingleSelectSegmentedCell.swift */; };
 		5A1E02B61EBF031B00BF72E9 /* SingleSelectSegmentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1E02B41EBF031B00BF72E9 /* SingleSelectSegmentedCell.xib */; };
+		5A1F2EFE1EC83CA300739022 /* QuizResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F2EFD1EC83CA300739022 /* QuizResultsController.swift */; };
 		5A2041321E96240C00A3D47B /* FormTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2041311E96240C00A3D47B /* FormTags.swift */; };
 		5A2041341E96262F00A3D47B /* QuestionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2041331E96262F00A3D47B /* QuestionRow.swift */; };
 		5A207A5F1E97792E006B0A04 /* QuestionEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A207A5E1E97792E006B0A04 /* QuestionEditorController.swift */; };
@@ -40,6 +41,7 @@
 		5A1DBE781EB72108006FB612 /* ExportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportController.swift; sourceTree = "<group>"; };
 		5A1E02B31EBF031B00BF72E9 /* SingleSelectSegmentedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleSelectSegmentedCell.swift; sourceTree = "<group>"; };
 		5A1E02B41EBF031B00BF72E9 /* SingleSelectSegmentedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleSelectSegmentedCell.xib; sourceTree = "<group>"; };
+		5A1F2EFD1EC83CA300739022 /* QuizResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizResultsController.swift; sourceTree = "<group>"; };
 		5A2041311E96240C00A3D47B /* FormTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTags.swift; sourceTree = "<group>"; };
 		5A2041331E96262F00A3D47B /* QuestionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionRow.swift; sourceTree = "<group>"; };
 		5A207A5E1E97792E006B0A04 /* QuestionEditorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionEditorController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				5A207A5E1E97792E006B0A04 /* QuestionEditorController.swift */,
 				5A1DBE761EB71885006FB612 /* QuizController.swift */,
 				5A1DBE781EB72108006FB612 /* ExportController.swift */,
+				5A1F2EFD1EC83CA300739022 /* QuizResultsController.swift */,
 				5A180DC11E80456800F9EE1A /* Question.swift */,
 				5A1D5D2B1E87A46C00714BBC /* Quiz.swift */,
 				5A1D5D2D1E88541B00714BBC /* QuizData.swift */,
@@ -263,6 +266,7 @@
 				5A1D44AB1E94D1D70092DBF0 /* NewQuizController.swift in Sources */,
 				5A207A5F1E97792E006B0A04 /* QuestionEditorController.swift in Sources */,
 				5A180DC21E80456800F9EE1A /* Question.swift in Sources */,
+				5A1F2EFE1EC83CA300739022 /* QuizResultsController.swift in Sources */,
 				5A1DBE791EB72108006FB612 /* ExportController.swift in Sources */,
 				5A2041321E96240C00A3D47B /* FormTags.swift in Sources */,
 				5A20C57E1EBE1B3F007C7E14 /* MultiSelectSegementedCell.swift in Sources */,
