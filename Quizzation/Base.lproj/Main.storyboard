@@ -138,7 +138,7 @@
         <scene sceneID="rSK-lp-BxK">
             <objects>
                 <navigationController id="CYN-6D-tSo" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3wV-1y-7jD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3wV-1y-7jD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -239,7 +239,7 @@
         <!--Question Editor-->
         <scene sceneID="koK-og-gfR">
             <objects>
-                <viewController storyboardIdentifier="QuestionEditor" id="C1Y-p1-ZBn" customClass="QuestionEditorController" customModule="Quizzation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionEditor" modalPresentationStyle="formSheet" id="C1Y-p1-ZBn" customClass="QuestionEditorController" customModule="Quizzation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cWk-8P-nUV"/>
                         <viewControllerLayoutGuide type="bottom" id="Tax-bc-PbX"/>
