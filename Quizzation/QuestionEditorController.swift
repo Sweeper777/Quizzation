@@ -24,6 +24,10 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
         navigItem.rightBarButtonItem = doneItem
         navigItem.leftBarButtonItem = cancelItem
         myNav.items = [navigItem]
+        let top = NSLayoutConstraint(item: myNav, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 0)
+        let leading = NSLayoutConstraint(item: myNav, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 0)
+        let trailing = NSLayoutConstraint(item: myNav, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: 0)
+        view.addConstraints([top, leading, trailing])
         
         tableView.contentInset = UIEdgeInsets(top: 44 + UIScreen.screenStatusBarHeight, left: 0, bottom: 0, right: 0)
         
