@@ -216,26 +216,6 @@
             </objects>
             <point key="canvasLocation" x="1775" y="1137"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="e7l-my-KYp">
-            <objects>
-                <navigationController id="6wd-LY-YCJ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpa-r2-rjl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="C1Y-p1-ZBn" kind="relationship" relationship="rootViewController" id="TTJ-Ls-bGe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cpd-5U-7D2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1774" y="1881"/>
-        </scene>
         <!--Question Editor-->
         <scene sceneID="koK-og-gfR">
             <objects>
