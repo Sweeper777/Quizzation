@@ -3,8 +3,8 @@ import Eureka
 
 class QuizResultsController: FormViewController {
     var correctAnswers: Int!
-    var noOfQuestions: Int!
     var hintUsed: Int!
+    var quiz: Quiz!
     
     override func viewDidLoad() {
         
