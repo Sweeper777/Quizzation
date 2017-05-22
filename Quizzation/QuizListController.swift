@@ -6,7 +6,7 @@ import MGSwipeTableCell
 
 class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
     let realm = try? Realm()
-    var quizzes: Results<QuizData>!
+    var quizzes: RealmSwift.Results<QuizData>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
