@@ -7,7 +7,13 @@ class QuizResultsController: FormViewController {
     var quiz: Quiz!
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
+        form +++ LabelRow() {
+            row in
+            row.cellStyle = .value1
+            row.title = NSLocalizedString("Number of Questions", comment: "")
+            row.value = "\(quiz.questions.count)"
+        }
     }
     
     @IBAction func done() {
