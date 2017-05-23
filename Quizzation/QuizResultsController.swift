@@ -14,6 +14,12 @@ class QuizResultsController: FormViewController {
             row.title = NSLocalizedString("Number of Questions", comment: "")
             row.value = "\(quiz.questions.count)"
         }
+        <<< LabelRow() {
+            row in
+            row.cellStyle = .value1
+            row.title = NSLocalizedString("Correct Answers", comment: "")
+            row.value = "\(correctAnswers!)"
+        }
     }
     
     @IBAction func done() {
