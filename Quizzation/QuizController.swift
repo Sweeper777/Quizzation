@@ -83,4 +83,12 @@ class QuizController: FormViewController {
         }
         performSegue(withIdentifier: "submit", sender: Results(quiz: quiz, correctAnswers: correctAnswers, hintUsed: hintUsed))
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = (segue.destination as? UINavigationController)?.topViewController as? QuizResultsController, let results = sender as? Results {
+            vc.correctAnswers = results.correctAnswers
+            vc.hintUsed = results.hintUsed
+            vc.quiz = results.quiz
+        }
+    }
 }
