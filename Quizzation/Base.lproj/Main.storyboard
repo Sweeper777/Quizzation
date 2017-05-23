@@ -22,11 +22,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eAh-g8-qWc" id="z9N-Z6-tkx">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wU5-vm-r7x">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -127,7 +127,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="CYN-6D-tSo" kind="presentation" modalPresentationStyle="formSheet" id="McH-fL-4D3"/>
+                        <segue destination="CYN-6D-tSo" kind="presentation" identifier="submit" modalPresentationStyle="formSheet" id="McH-fL-4D3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amV-9Q-ZTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -208,7 +208,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="6wd-LY-YCJ" kind="presentation" identifier="showQuestionEditor" modalPresentationStyle="formSheet" id="Xzr-uw-2iM"/>
                         <segue destination="Wz3-I6-Auj" kind="unwind" identifier="unwind" unwindAction="unwindFromNewQuizWithSegue:" id="gmG-nI-LZb"/>
                     </connections>
                 </viewController>
@@ -240,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bgn-OC-M3L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2562" y="1881"/>
+            <point key="canvasLocation" x="1774" y="1841"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FFt-lq-Qmz">
