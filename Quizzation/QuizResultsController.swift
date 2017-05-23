@@ -20,6 +20,12 @@ class QuizResultsController: FormViewController {
             row.title = NSLocalizedString("Correct Answers", comment: "")
             row.value = "\(correctAnswers!)"
         }
+        <<< LabelRow() {
+            row in
+            row.cellStyle = .value1
+            row.title = NSLocalizedString("Hint(s) Used", comment: "")
+            row.value = "\(hintUsed!)"
+        }
     }
     
     @IBAction func done() {
