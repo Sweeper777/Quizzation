@@ -26,6 +26,14 @@ class QuizResultsController: FormViewController {
             row.title = NSLocalizedString("Hint(s) Used", comment: "")
             row.value = "\(hintUsed!)"
         }
+        <<< LabelRow() {
+            row in
+            row.cellStyle = .value1
+            row.title = NSLocalizedString("Percentage", comment: "")
+            let formatter = NumberFormatter()
+            formatter.maximumFractionDigits = 2
+            row.value = "\(formatter.string(from: (Double(correctAnswers) / Double(quiz.questions.count) * 100) as NSNumber)!)%"
+        }
     }
     
     @IBAction func done() {
