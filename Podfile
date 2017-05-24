@@ -12,4 +12,5 @@ target 'Quizzation' do
   pod 'MGSwipeTableCell'
   pod 'RealmSwift'
   pod 'MultiSelectSegmentedControl'
+  pod 'MultiSlider'
 end

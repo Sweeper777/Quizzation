@@ -2,7 +2,10 @@ PODS:
   - Base64nl (1.2)
   - Eureka (3.0.0)
   - MGSwipeTableCell (1.5.6)
+  - MiniLayout (1.1.0)
   - MultiSelectSegmentedControl (1.1.0)
+  - MultiSlider (1.1.2):
+    - MiniLayout
   - Realm (2.5.1):
     - Realm/Headers (= 2.5.1)
   - Realm/Headers (2.5.1)
@@ -17,6 +20,7 @@ DEPENDENCIES:
   - Eureka
   - MGSwipeTableCell
   - MultiSelectSegmentedControl
+  - MultiSlider
   - RealmSwift
   - SCLAlertView
   - SwiftyJSON
@@ -26,13 +30,15 @@ SPEC CHECKSUMS:
   Base64nl: a497bdcd1c01ea793d36b399016195a8713c0e95
   Eureka: f36fd440c3ebb7bfea0a4fbe6f16a05f1cb35906
   MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
+  MiniLayout: 7664ed112a89d954e6ccb83b6ef5dc122fb77852
   MultiSelectSegmentedControl: 54fb23c997b971eff621cfcf965ff1613d99c3d2
+  MultiSlider: ca6ca7e0a511378857d8822224245f3db63eb205
   Realm: 32f86104d37c8521f864d4274050b38ba6190733
   RealmSwift: f719e7511c902b8908593e8f143f59e47931bdb6
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwiftyUtils: 87094996d977846e5a9f2cbe653ff28dc15ba187
 
-PODFILE CHECKSUM: 05b40ab18a71b51b7fdfa71c5c9bfa7c9438baae
+PODFILE CHECKSUM: f2e93746d8927c2c8fee1d05171df673bdfcfa6f
 
 COCOAPODS: 1.1.0.beta.1

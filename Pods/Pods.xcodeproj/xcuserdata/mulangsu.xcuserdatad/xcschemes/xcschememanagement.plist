@@ -19,7 +19,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MiniLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MultiSelectSegmentedControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MultiSlider.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,12 +67,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0F1B4EBDFE3A0C7920208EE24630FB55</key>
+		<key>367775726ABA7003552CA455107C1627</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>367775726ABA7003552CA455107C1627</key>
+		<key>3760B853FA54727E313D902385335AF5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>430E88EBA9C09E682B224A2A88C57E23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>433783DD1794CDA9B41840406A23C4FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4B546238C221225BF059B2E6EA63B6BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +102,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7D6E6BAC309EF403514E3216E37C3915</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7F6BAB6446F5E587FA7C4A419ACB3617</key>
+		<key>7208F9C42A8AF4D7212ED691CA0BC4DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,17 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8FE72246264362B1A32840DFBB2457F6</key>
+		<key>9ADD7ABD0E80833A8809AF20D837536C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9BEACB78D31EC352C4AC80244BC0E76D</key>
+		<key>AA613AF4C878ACD920C5D7C8D61470C6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EB37F9BBAB3EB8D183A37DDDD1250BEF</key>
+		<key>EC204A3B5BAC62AA48FE9970CBA5AD80</key>
 		<dict>
 			<key>primary</key>
 			<true/>
