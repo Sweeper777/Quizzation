@@ -34,5 +34,11 @@ public class GradeBoundariesCell: Cell<NSMutableArray>, CellType {
         textViewText += "D: \(Int(sender.value[0]))%"
         textView.text = textViewText
     }
+}
+
+public final class GradeBoundariesRow: Row<GradeBoundariesCell>, RowType {
+    required public init(tag: String?) {
+        super.init(tag: tag)
+        cellProvider = CellProvider<GradeBoundariesCell>(nibName: "GradeBoundariesCell")
     }
 }
