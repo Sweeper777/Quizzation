@@ -72,7 +72,9 @@ class NewQuizController: FormViewController {
                     return
                 }
                 
-                let quiz = Quiz(name: name, questions: questions)
+                let gradeBoundaries = (form.rowBy(tag: tagGradeBoundaries) as! GradeBoundariesRow).value!.map { $0 as! Int }
+                
+                let quiz = Quiz(name: name, questions: questions, gradeBoundaries: gradeBoundaries)
                 let realm = try! Realm()
                 let quizData = QuizData()
                 quizData.data = try! quiz.toJSON().rawData() as NSData?
