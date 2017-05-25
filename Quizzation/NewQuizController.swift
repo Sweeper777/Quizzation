@@ -15,6 +15,12 @@ class NewQuizController: FormViewController {
             row.cell.textField.textAlignment = .left
         }
         
+        form +++ Section(NSLocalizedString("grade boundaries", comment: ""))
+            <<< GradeBoundariesRow(tagGradeBoundaries) {
+                row in
+                row.value = NSMutableArray(array: [20, 40, 60, 70, 85])
+        }
+        
         form +++ MultivaluedSection(multivaluedOptions: [.Delete, .Insert, .Reorder], header: NSLocalizedString("Questions", comment: ""), footer: "") {
             section in
             section.addButtonProvider = {
