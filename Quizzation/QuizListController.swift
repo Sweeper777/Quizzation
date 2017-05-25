@@ -4,6 +4,15 @@ import RealmSwift
 import SwiftyJSON
 import MGSwipeTableCell
 
+extension Object {
+    static func deleteAll(`in` realm: Realm) throws {
+        let allObjects = realm.objects(self)
+        try realm.write {
+            realm.delete(allObjects)
+        }
+    }
+}
+
 class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
     let realm = try? Realm()
     var quizzes: RealmSwift.Results<QuizData>!
