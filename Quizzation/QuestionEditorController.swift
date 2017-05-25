@@ -14,6 +14,7 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
         super.viewDidLoad()
         myNav = UINavigationBar(frame: CGRect(x: 0, y: 0, width: self.view.width, height: 44))
         myNav.barTintColor = #colorLiteral(red: 0.3529411765, green: 0.7333333333, blue: 0.3529411765, alpha: 1)
+        myNav.translatesAutoresizingMaskIntoConstraints = false
         myNav.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.view.addSubview(myNav)
         let cancelItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancel))
