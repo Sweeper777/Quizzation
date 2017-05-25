@@ -8,7 +8,7 @@ class QuizController: FormViewController {
         super.viewDidLoad()
         
         for (index, question) in quiz.questions.enumerated() {
-            let questionSection = Section(NSLocalizedString("Question", comment: "") + " \(index)/\(quiz.questions.count)")
+            let questionSection = Section(NSLocalizedString("Question", comment: "") + " \(index + 1)/\(quiz.questions.count)")
             questionSection <<< LabelRow() {
                 row in
                 row.cell.textLabel?.numberOfLines = 0
