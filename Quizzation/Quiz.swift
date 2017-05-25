@@ -27,4 +27,17 @@ class Quiz {
         let questions = arr.map { Question.from(json: $0) }.filter { $0 != nil }
         return Quiz(name: name, questions: questions as! [Question], gradeBoundaries: gradeBoundaries as! [Int])
     }
+    
+    func grade(percentage: Double) -> String {
+        var retval = "E"
+        let grades = ["D", "C", "B", "A", "A*"]
+        for (index, grade) in gradeBoundaries.enumerated() {
+            if Int(percentage * 100) >= grade {
+                retval = grades[index]
+            } else {
+                return retval
+            }
+        }
+        return "A*"
+    }
 }
