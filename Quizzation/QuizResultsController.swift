@@ -34,6 +34,12 @@ class QuizResultsController: FormViewController {
             formatter.maximumFractionDigits = 2
             row.value = "\(formatter.string(from: (Double(correctAnswers) / Double(quiz.questions.count) * 100) as NSNumber)!)%"
         }
+        <<< LabelRow() {
+            row in
+            row.cellStyle = .value1
+            row.title = NSLocalizedString("Grade", comment: "")
+            row.value = quiz.grade(percentage: Double(correctAnswers) / Double(quiz.questions.count))
+        }
     }
     
     @IBAction func done() {
