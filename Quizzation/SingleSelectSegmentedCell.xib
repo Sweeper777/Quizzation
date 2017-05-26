@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nTM-Ar-CPr" id="u6R-bW-gdA">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="q1V-WF-1gh">
@@ -30,6 +30,7 @@
                             <segment title="C"/>
                             <segment title="D"/>
                         </segments>
+                        <color key="tintColor" red="0.23137254900000001" green="0.4823529412" blue="0.23137254900000001" alpha="1" colorSpace="deviceRGB"/>
                         <connections>
                             <action selector="valueChange" destination="nTM-Ar-CPr" eventType="valueChanged" id="VR5-B6-RRU"/>
                         </connections>
