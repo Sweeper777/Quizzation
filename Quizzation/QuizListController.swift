@@ -47,7 +47,7 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let quizData = quizzes[indexPath.row]
-        let quiz = Quiz.from(json: JSON(data: quizData.data as! Data))
+        let quiz = Quiz.from(json: JSON(data: quizData.data! as Data))
         performSegue(withIdentifier: "doQuiz", sender: quiz)
     }
     
@@ -68,7 +68,7 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
     func swipeTableCell(_ cell: MGSwipeTableCell, tappedButtonAt index: Int, direction: MGSwipeDirection, fromExpansion: Bool) -> Bool {
         let indexPath = tableView.indexPath(for: cell)!
         if index == 0 {
-            performSegue(withIdentifier: "export", sender: quizzes[indexPath.row].data as! Data)
+            performSegue(withIdentifier: "export", sender: quizzes[indexPath.row].data! as Data)
         }
         return true
     }
