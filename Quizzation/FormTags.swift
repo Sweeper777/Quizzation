@@ -12,5 +12,6 @@ let tagMCSingleAnswerSection = "mcSingleAnswerSection"
 let tagMCMultipleAnswersSection = "mcMultipleAnswersSection"
 
 let tagQuestionsSection = "questionsSection"
+let tagGradeBoundaries = "gradeBoundaries"
 
 let tagExportText = "exportText"
