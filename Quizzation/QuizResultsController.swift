@@ -41,6 +41,20 @@ class QuizResultsController: FormViewController {
             row.title = NSLocalizedString("Grade", comment: "")
             row.value = quiz.grade(percentage: Double(correctAnswers) / Double(quiz.questions.count))
         }
+        
+        form +++ ButtonRow() {
+            row in
+            row.title = NSLocalizedString("Show Wrongly Answered Questions", comment: "")
+            }.onCellSelection {
+                cell, row in
+                row.hidden = true
+                row.evaluateHidden()
+                self.showWronglyAnsweredQuestions()
+        }
+    }
+    
+    func showWronglyAnsweredQuestions() {
+        
     }
     
     @IBAction func done() {
