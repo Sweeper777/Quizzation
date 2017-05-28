@@ -89,7 +89,7 @@ class QuizController: FormViewController {
                 hintUsed += 1
             }
         }
-        performSegue(withIdentifier: "submit", sender: Results(quiz: quiz, correctAnswers: correctAnswers, hintUsed: hintUsed))
+        performSegue(withIdentifier: "submit", sender: Results(quiz: quiz, correctAnswers: correctAnswers, hintUsed: hintUsed, wrongAnswers: wrongAnswers))
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
