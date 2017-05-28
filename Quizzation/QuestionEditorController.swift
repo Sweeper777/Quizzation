@@ -30,7 +30,7 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
         let trailing = NSLayoutConstraint(item: myNav, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: 0)
         view.addConstraints([top, leading, trailing])
         
-        tableView.contentInset = UIEdgeInsets(top: 44 + UIScreen.screenStatusBarHeight, left: 0, bottom: 0, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 44 + UIScreen.statusBarHeight, left: 0, bottom: 0, right: 0)
         
         form +++ PickerInlineRow<QuestionType>(tagQuestionType) {
             row in
