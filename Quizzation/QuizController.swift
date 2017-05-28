@@ -97,6 +97,7 @@ class QuizController: FormViewController {
             vc.correctAnswers = results.correctAnswers
             vc.hintUsed = results.hintUsed
             vc.quiz = results.quiz
+            vc.wrongAnswers = results.wrongAnswers
         }
     }
 }

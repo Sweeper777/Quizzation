@@ -5,6 +5,7 @@ class QuizResultsController: FormViewController {
     var correctAnswers: Int!
     var hintUsed: Int!
     var quiz: Quiz!
+    var wrongAnswers: [WronglyAnsweredQuestion]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
