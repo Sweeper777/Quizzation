@@ -58,6 +58,7 @@ class QuizController: FormViewController {
     @IBAction func submit() {
         var correctAnswers = 0
         var hintUsed = 0
+        var wrongAnswers = [WronglyAnsweredQuestion]()
         for (index, question) in quiz.questions.enumerated() {
             let row = form.rowBy(tag: "answer\(index)")!
             switch question.type {
@@ -65,16 +66,23 @@ class QuizController: FormViewController {
                 guard let answer = row.baseValue as? String else { continue }
                 if question.possibleAnswers.contains(answer) {
                     correctAnswers += 1
+                } else {
+                    wrongAnswers.append(WronglyAnsweredQuestion(questionText: question.questionText, correctAnswers: question.possibleAnswers, yourAnswer: answer))
                 }
             case .multipleMC:
                 guard let answer = ((row.baseValue as? NSMutableArray)?.map { $0 as? String }) else { continue }
                 if Set(question.possibleAnswers) == Set(answer.filter { $0 != nil }.map { $0! }) {
                     correctAnswers += 1
+                } else {
+                    let nonNilAnswers = answer.filter { $0 != nil }.map { $0! }
+                    wrongAnswers.append(WronglyAnsweredQuestion(questionText: question.questionText, correctAnswers: question.possibleAnswers, yourAnswer: nonNilAnswers.joined(separator: ", ")))
                 }
             case .singleMC:
                 guard let answer = row.baseValue as? Character else { continue }
                 if question.possibleAnswers.contains(answer.description) {
                     correctAnswers += 1
+                } else {
+                    wrongAnswers.append(WronglyAnsweredQuestion(questionText: question.questionText, correctAnswers: question.possibleAnswers, yourAnswer: answer.description))
                 }
             }
             if row.section!.last! is LabelRow {
