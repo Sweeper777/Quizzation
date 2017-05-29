@@ -155,7 +155,10 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
         
         let questionType = values[tagQuestionType] as! QuestionType
         let questionText = (values[tagQuestionText] as? String) ?? ""
-        let hint = values[tagHint] as? String
+        var hint = values[tagHint] as? String
+        if hint?.trimmed() == "" {
+            hint = nil
+        }
         var possibleAnswers = [String]()
         for row in answersSection {
             if row.baseValue is String {
