@@ -65,6 +65,7 @@ class QuestionEditorController: FormViewController, TypedRowControllerType {
                 return ButtonRow() {
                     row in
                     row.title = NSLocalizedString("Add New Answer", comment: "")
+                    row.cell.tintColor = UIColor(hex: "3b7b3b")
                 }
             }
             

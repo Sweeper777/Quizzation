@@ -37,6 +37,7 @@ class QuizController: FormViewController {
                 questionSection <<< ButtonRow() {
                     row in
                     row.title = NSLocalizedString("Show Hint", comment: "")
+                    row.cell.tintColor = UIColor(hex: "3b7b3b")
                 }
                     .onCellSelection {
                     cell, row in

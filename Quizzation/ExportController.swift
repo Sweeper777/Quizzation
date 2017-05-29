@@ -20,6 +20,7 @@ class ExportController: FormViewController {
             <<< ButtonRow() {
                 row in
                 row.title = "Share"
+                row.cell.tintColor = UIColor(hex: "3b7b3b")
             }.onCellSelection {
                 cell, row in
                 let activityViewController = UIActivityViewController(activityItems: [self.base64String], applicationActivities: nil)

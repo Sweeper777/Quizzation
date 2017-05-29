@@ -27,6 +27,7 @@ class NewQuizController: FormViewController {
                 _ in return ButtonRow() {
                     row in
                     row.title = NSLocalizedString("New Question", comment: "")
+                    row.cell.tintColor = UIColor(hex: "3b7b3b")
                 }
             }
             
