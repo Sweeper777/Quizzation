@@ -11,12 +11,15 @@ class ExportController: FormViewController {
         base64String = quizData.base64EncodedString()
         
         form +++ Section(header: "", footer: NSLocalizedString("Share this and others can import the quiz using the code", comment: ""))
-            <<< LabelRow(tagExportText) {
+            <<< TextAreaRow(tagExportText) {
                 row in
                 row.cell.textLabel?.numberOfLines = 0
                 row.cell.textLabel?.font = UIFont(name: "Courier New", size: 16)
-                row.title = self.base64String
-        }
+                row.value = self.base64String
+                
+        }.cellUpdate({ (cell, row) in
+            cell.textView.isEditable = false
+        })
             <<< ButtonRow() {
                 row in
                 row.title = "Share"
