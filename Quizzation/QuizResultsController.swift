@@ -63,6 +63,12 @@ class QuizResultsController: FormViewController {
                 row.cell.textLabel?.numberOfLines = 0
                 row.title = question.questionText
             }
+            <<< LabelRow() {
+                row in
+                row.cellStyle = .value1
+                row.title = NSLocalizedString("Correct Answer(s)", comment: "")
+                row.value = question.correctAnswers.joined(separator: ", ")
+            }
         }
     }
     
