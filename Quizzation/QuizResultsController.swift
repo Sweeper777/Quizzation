@@ -55,7 +55,10 @@ class QuizResultsController: FormViewController {
     }
     
     func showWronglyAnsweredQuestions() {
-        
+        let section = Section()
+        form +++ section
+        for question in wrongAnswers {
+        }
     }
     
     @IBAction func done() {
