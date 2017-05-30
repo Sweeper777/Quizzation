@@ -58,6 +58,11 @@ class QuizResultsController: FormViewController {
         let section = Section()
         form +++ section
         for question in wrongAnswers {
+            section <<< LabelRow() {
+                row in
+                row.cell.textLabel?.numberOfLines = 0
+                row.title = question.questionText
+            }
         }
     }
     
