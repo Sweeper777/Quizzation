@@ -65,6 +65,10 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
         tableView.reloadData()
     }
     
+    @IBAction func importQuiz() {
+        
+    }
+    
     func swipeTableCell(_ cell: MGSwipeTableCell, tappedButtonAt index: Int, direction: MGSwipeDirection, fromExpansion: Bool) -> Bool {
         let indexPath = tableView.indexPath(for: cell)!
         if index == 0 {
