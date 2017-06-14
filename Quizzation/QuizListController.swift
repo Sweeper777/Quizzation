@@ -66,7 +66,18 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
     }
     
     @IBAction func importQuiz() {
+        let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+        let textView = alert.addTextView()
+        alert.addButton(NSLocalizedString("OK", comment: "")) {
+            let base64String = textView.text!
+            if let data = Data(base64Encoded: base64String), let _ = Quiz.from(json: JSON(data: data)) {
+            } else {
+            }
+        }
+        alert.addButton(NSLocalizedString("Cancel", comment: ""), action: {})
         
+        
+        _ = alert.showCustom(NSLocalizedString("Import Quiz", comment: ""), subTitle: NSLocalizedString("Enter code in the box below", comment: ""), color: UIColor(hex: "5abb5a"), icon: #imageLiteral(resourceName: "import"))
     }
     
     func swipeTableCell(_ cell: MGSwipeTableCell, tappedButtonAt index: Int, direction: MGSwipeDirection, fromExpansion: Bool) -> Bool {
