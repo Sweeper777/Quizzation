@@ -72,6 +72,9 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
             let base64String = textView.text!
             if let data = Data(base64Encoded: base64String), let _ = Quiz.from(json: JSON(data: data)) {
             } else {
+                let errAlert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+                errAlert.addButton(NSLocalizedString("OK", comment: ""), action: {})
+                _ = errAlert.showCustom(NSLocalizedString("Error", comment: ""), subTitle: NSLocalizedString("The code is not in the correct format!", comment: ""), color: .red, icon: UIImage())
             }
         }
         alert.addButton(NSLocalizedString("Cancel", comment: ""), action: {})
