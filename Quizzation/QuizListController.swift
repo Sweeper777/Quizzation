@@ -76,6 +76,7 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
         }
         alert.addButton(NSLocalizedString("Cancel", comment: ""), action: {})
         
+        textView.font = UIFont(name: "Courier New", size: 12)
         
         _ = alert.showCustom(NSLocalizedString("Import Quiz", comment: ""), subTitle: NSLocalizedString("Enter code in the box below", comment: ""), color: UIColor(hex: "5abb5a"), icon: #imageLiteral(resourceName: "import"))
     }
