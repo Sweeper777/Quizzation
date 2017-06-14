@@ -37,6 +37,7 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
         cell.textLabel?.text = json[quizNameKey].string
         
         cell.rightButtons = [
+            MGSwipeButton(title: "", icon: #imageLiteral(resourceName: "delete"), backgroundColor: UIColor(hex: "5abb5a")),
             MGSwipeButton(title: "", icon: #imageLiteral(resourceName: "export"), backgroundColor: UIColor(hex: "5abb5a")),
             MGSwipeButton(title: NSLocalizedString("Edit", comment: ""), backgroundColor: UIColor(hex: "5abb5a"))
         ]
