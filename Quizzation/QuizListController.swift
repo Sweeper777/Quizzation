@@ -71,6 +71,12 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
         alert.addButton(NSLocalizedString("OK", comment: "")) {
             let base64String = textView.text!
             if let data = Data(base64Encoded: base64String), let _ = Quiz.from(json: JSON(data: data)) {
+                try? self.realm?.write {
+                    let quizData = QuizData()
+                    quizData.data = data as NSData
+                    self.realm?.add(quizData)
+                }
+                self.tableView.reloadData()
             } else {
                 let errAlert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
                 errAlert.addButton(NSLocalizedString("OK", comment: ""), action: {})
