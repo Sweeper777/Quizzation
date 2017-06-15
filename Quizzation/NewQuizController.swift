@@ -4,6 +4,8 @@ import SCLAlertView
 import RealmSwift
 
 class NewQuizController: FormViewController {
+    
+    var quizData: QuizData!
 
     override func viewDidLoad() {
         super.viewDidLoad()
