@@ -95,10 +95,16 @@ class NewQuizController: FormViewController {
                 
                 let quiz = Quiz(name: name, questions: questions, gradeBoundaries: gradeBoundaries)
                 let realm = try! Realm()
-                let quizData = QuizData()
-                quizData.data = try! quiz.toJSON().rawData() as NSData?
-                try? realm.write {
-                    realm.add(quizData)
+                if quizData == nil {
+                    let quizData = QuizData()
+                    quizData.data = try! quiz.toJSON().rawData() as NSData?
+                    try? realm.write {
+                        realm.add(quizData)
+                    }
+                } else {
+                    try? realm.write {
+                        quizData!.data = try! quiz.toJSON().rawData() as NSData?
+                    }
                 }
                 performSegue(withIdentifier: "unwind", sender: self)
             }
