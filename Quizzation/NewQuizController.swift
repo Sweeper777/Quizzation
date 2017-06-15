@@ -20,12 +20,13 @@ class NewQuizController: FormViewController {
             row in
             row.title = NSLocalizedString("Name", comment: "")
             row.cell.textField.textAlignment = .left
+            row.value = quiz?.name
         }
         
         form +++ Section(NSLocalizedString("grade boundaries", comment: ""))
             <<< GradeBoundariesRow(tagGradeBoundaries) {
                 row in
-                row.value = NSMutableArray(array: [20, 40, 60, 70, 85])
+                row.value = NSMutableArray(array: quiz?.gradeBoundaries ?? [20, 40, 60, 70, 85])
         }
         
         form +++ MultivaluedSection(multivaluedOptions: [.Delete, .Insert, .Reorder], header: NSLocalizedString("Questions", comment: ""), footer: "") {
