@@ -51,6 +51,16 @@ class NewQuizController: FormViewController {
             }
             section.tag = tagQuestionsSection
             
+            for question in quiz?.questions ?? [] {
+                section <<< QuestionRow(tag: nil) {
+                    row in
+                    row.value = question
+                    row.cellStyle = .subtitle
+                    }.onChange {
+                        row in
+                        row.title = row.value?.type.description ?? NSLocalizedString("Blank Question", comment: "")
+                }
+            }
         }
     }
     
