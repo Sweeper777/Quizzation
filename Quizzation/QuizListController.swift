@@ -93,7 +93,7 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
     
     func swipeTableCell(_ cell: MGSwipeTableCell, tappedButtonAt index: Int, direction: MGSwipeDirection, fromExpansion: Bool) -> Bool {
         let indexPath = tableView.indexPath(for: cell)!
-        if index == 0 {
+        if index == 1 {
             performSegue(withIdentifier: "export", sender: quizzes[indexPath.row].data! as Data)
         }
         return true
