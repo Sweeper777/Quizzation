@@ -2,6 +2,7 @@ import UIKit
 import Eureka
 import SCLAlertView
 import RealmSwift
+import SwiftyJSON
 
 class NewQuizController: FormViewController {
     
@@ -9,7 +10,11 @@ class NewQuizController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        var quiz: Quiz?
+        if quizData != nil {
+            quiz = Quiz.from(json: JSON(data: quizData!.data! as Data))
+            title = quiz!.name
+        }
         
         form +++ TextRow(tagName) {
             row in
