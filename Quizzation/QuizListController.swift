@@ -96,6 +96,13 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
         if index == 1 {
             performSegue(withIdentifier: "export", sender: quizzes[indexPath.row].data! as Data)
         }
+        
+        if index == 0 {
+            try? realm?.write {
+                realm?.delete(quizzes[indexPath.row])
+            }
+            tableView.deleteRows(at: [indexPath], with: .left)
+        }
         return true
     }
 }
