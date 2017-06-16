@@ -103,6 +103,9 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
             }
             tableView.deleteRows(at: [indexPath], with: .left)
         }
+        if index == 2 {
+            performSegue(withIdentifier: "editQuiz", sender: quizzes[indexPath.row])
+        }
         return true
     }
 }
