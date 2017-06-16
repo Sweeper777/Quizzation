@@ -61,6 +61,7 @@
                     <connections>
                         <segue destination="ZW6-gb-En3" kind="presentation" identifier="doQuiz" id="ljs-u9-abL"/>
                         <segue destination="zJG-bx-ONU" kind="presentation" identifier="export" modalPresentationStyle="formSheet" id="Mp7-AU-9up"/>
+                        <segue destination="UhT-Px-fhU" kind="presentation" identifier="editQuiz" id="Nzl-Fs-tCa"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H99-As-32j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -320,4 +321,7 @@
     <resources>
         <image name="import" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Nzl-Fs-tCa"/>
+    </inferredMetricsTieBreakers>
 </document>
