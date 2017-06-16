@@ -60,6 +60,12 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
         if let data = sender as? Data, let vc = (segue.destination as? UINavigationController)?.topViewController as? ExportController {
             vc.quizData = data
         }
+        
+        if let quiz = sender as? QuizData, let vc = (segue.destination as? UINavigationController)?.topViewController as? NewQuizController {
+            if segue.identifier == "editQuiz" {
+                vc.quizData = quiz
+            }
+        }
     }
     
     @IBAction func unwindFromNewQuiz(segue: UIStoryboardSegue) {
