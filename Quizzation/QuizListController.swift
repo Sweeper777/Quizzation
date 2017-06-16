@@ -35,6 +35,7 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
         let quizData = quizzes[indexPath.row].data!
         let json = JSON(data: quizData as Data)
         cell.textLabel?.text = json[quizNameKey].string
+        cell.detailTextLabel?.text = "\(NSLocalizedString("No. of questions: ", comment: "")) \(json[questionsKey].array!.count)"
         
         cell.rightButtons = [
             MGSwipeButton(title: "", icon: #imageLiteral(resourceName: "delete"), backgroundColor: UIColor(hex: "5abb5a")),
