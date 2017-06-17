@@ -3,15 +3,7 @@ import Base64nl
 import RealmSwift
 import SwiftyJSON
 import MGSwipeTableCell
-
-extension Object {
-    static func deleteAll(`in` realm: Realm) throws {
-        let allObjects = realm.objects(self)
-        try realm.write {
-            realm.delete(allObjects)
-        }
-    }
-}
+import SCLAlertView
 
 class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
     let realm = try? Realm()
