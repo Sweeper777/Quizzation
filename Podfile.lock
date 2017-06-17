@@ -6,11 +6,11 @@ PODS:
   - MultiSelectSegmentedControl (1.1.0)
   - MultiSlider (1.1.2):
     - MiniLayout
-  - Realm (2.7.0):
-    - Realm/Headers (= 2.7.0)
-  - Realm/Headers (2.7.0)
-  - RealmSwift (2.7.0):
-    - Realm (= 2.7.0)
+  - Realm (2.8.0):
+    - Realm/Headers (= 2.8.0)
+  - Realm/Headers (2.8.0)
+  - RealmSwift (2.8.0):
+    - Realm (= 2.8.0)
   - SCLAlertView (0.7.0)
   - SwiftyJSON (3.1.4)
   - SwiftyUtils (1.0.0)
@@ -33,8 +33,8 @@ SPEC CHECKSUMS:
   MiniLayout: 7664ed112a89d954e6ccb83b6ef5dc122fb77852
   MultiSelectSegmentedControl: 54fb23c997b971eff621cfcf965ff1613d99c3d2
   MultiSlider: ca6ca7e0a511378857d8822224245f3db63eb205
-  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
-  RealmSwift: 6d06425d3900c86473c4f323bf6949b43fca22bc
+  Realm: 929243ad2b618b3232e70658bedc61110e7563f1
+  RealmSwift: 5b7079b891f2833d1849294161ba3e092bbda3f6
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwiftyUtils: f48a22d2fa8eece42a11d8bbb4d01a9758dd0602
