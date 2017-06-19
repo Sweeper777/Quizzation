@@ -1,0 +1,21 @@
+
+/* Class = "UINavigationItem"; title = "Results"; ObjectID = "04d-XA-FFg"; */
+"04d-XA-FFg.title" = "结果";
+
+/* Class = "UINavigationItem"; title = "Quizzes"; ObjectID = "6Tw-iP-cur"; */
+"6Tw-iP-cur.title" = "测验";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "JMI-MO-lkh"; */
+"JMI-MO-lkh.text" = "Subtitle";
+
+/* Class = "UINavigationItem"; title = "Question Editor"; ObjectID = "NeM-AX-q4x"; */
+"NeM-AX-q4x.title" = "题目编辑器";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "wU5-vm-r7x"; */
+"wU5-vm-r7x.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "New Quiz"; ObjectID = "xXT-rT-l5l"; */
+"xXT-rT-l5l.title" = "新测验";
+
+/* Class = "UINavigationItem"; title = "Export"; ObjectID = "zMm-Wx-8me"; */
+"zMm-Wx-8me.title" = "输出";
