@@ -1,7 +1,10 @@
-/* 
-  Localizable.strings
-  
-
-  Created by Mulang Su on 2017/06/17.
-
-*/
+// NewQuizController
+"Name" = "Name";
+"grade boundaries" = "grade boundaries";
+"Questions" = "Questions";
+"New Question" = "New Question";
+"Blank Question" = "Blank Question";
+"OK" = "OK";
+"Error" = "Error";
+"Name cannot be blank!" = "Name cannot be blank!";
+"Please add at least one question!" = "Please add at least one question!";
