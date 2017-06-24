@@ -33,3 +33,7 @@
 "Show Hint" = "Show Hint";
 "Hint:" = "Hint:";
 
+// ExportController
+"Share this and others can import the quiz using the code" = "Share this and others can import the quiz using the code";
+"Share" = "Share";
+
