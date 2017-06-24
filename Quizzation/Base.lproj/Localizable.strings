@@ -26,3 +26,10 @@
 "Add New Answer" = "Add New Answer";
 "Answer" = "Answer";
 "Please add at least one answer!" = "Please add at least one answer!";
+
+// QuizController
+"Question" = "Question";
+"Type here" = "Type here";
+"Show Hint" = "Show Hint";
+"Hint:" = "Hint:";
+
