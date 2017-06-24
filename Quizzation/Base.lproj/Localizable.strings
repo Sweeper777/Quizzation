@@ -8,3 +8,10 @@
 "Error" = "Error";
 "Name cannot be blank!" = "Name cannot be blank!";
 "Please add at least one question!" = "Please add at least one question!";
+
+// QuizListController
+"No. of questions: " = "No. of questions: ";
+"The code is not in the correct format!" = "The code is not in the correct format!";
+"Cancel" = "Cancel";
+"Import Quiz" = "Import Quiz";
+"Enter code in the box below" = "Enter code in the box below";
