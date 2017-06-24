@@ -15,3 +15,14 @@
 "Cancel" = "Cancel";
 "Import Quiz" = "Import Quiz";
 "Enter code in the box below" = "Enter code in the box below";
+
+// QuestionEditorController
+"Question Editor" = "Question Editor";
+"Type" = "Type";
+"question" = "question";
+"Hint" = "Hint";
+"Optional" = "Optional";
+"answers" = "answers";
+"Add New Answer" = "Add New Answer";
+"Answer" = "Answer";
+"Please add at least one answer!" = "Please add at least one answer!";
