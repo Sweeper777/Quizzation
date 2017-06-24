@@ -48,3 +48,8 @@
 "Your Answer" = "Your Answer";
 "Not Answered" = "Not Answered";
 
+// Question
+"Fill In the Blank" = "Fill In the Blank";
+"Multiple Choice (Single Answer)" = "Multiple Choice (Single Answer)";
+"Multiple Choice (Multiple Answers)" = "Multiple Choice (Multiple Answers)";
+
