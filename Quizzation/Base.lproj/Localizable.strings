@@ -37,3 +37,14 @@
 "Share this and others can import the quiz using the code" = "Share this and others can import the quiz using the code";
 "Share" = "Share";
 
+// QuizResultsController
+"Number of Questions" = "Number of Questions";
+"Correct Answers" = "Correct Answers";
+"Hint(s) Used" = "Hint(s) Used";
+"Percentage" = "Percentage";
+"Grade" = "Grade";
+"Show Wrongly Answered Questions" = "Show Wrongly Answered Questions";
+"Correct Answer(s)" = "Correct Answer(s)";
+"Your Answer" = "Your Answer";
+"Not Answered" = "Not Answered";
+
