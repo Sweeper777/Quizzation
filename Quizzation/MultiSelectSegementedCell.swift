@@ -31,7 +31,8 @@ public class MultiSelectSegmentedCell: Cell<NSMutableArray>, CellType, MultiSele
     }
     
     public func multiSelect(_ multiSelecSegmendedControl: MultiSelectSegmentedControl!, didChangeValue value: Bool, at index: UInt) {
-        row.value = NSMutableArray(array: multiSelecSegmendedControl.selectedSegmentTitles)
+        let arr = NSMutableArray(array: multiSelecSegmendedControl.selectedSegmentTitles)
+        row.value = arr.count == 0 ? nil : arr
         row.updateCell()
     }
 }
