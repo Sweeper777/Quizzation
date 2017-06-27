@@ -1,7 +1,58 @@
-/* 
-  Localizable.strings
-  
+// NewQuizController
+"Name" = "名";
+"grade boundaries" = "グレードの境界";
+"Questions" = "問題";
+"New Question" = "新規問題";
+"Blank Question" = "空白の問題";
+"OK" = "OK";
+"Error" = "エラー";
+"Name cannot be blank!" = "名を入力してください";
+"Please add at least one question!" = "問題を追加してください";
 
-  Created by Mulang Su on 2017/06/17.
+// QuizListController
+"No. of questions: " = "問題数：";
+"The code is not in the correct format!" = "コードのフォーマットは不正確です";
+"Cancel" = "キャンセル";
+"Import Quiz" = "クイズをインポート";
+"Enter code in the box below" = "コードを入力してください";
 
-*/
+// QuestionEditorController
+"Question Editor" = "問題エディター";
+"Type" = "タイプ";
+"question" = "問題";
+"Hint" = "ヒント";
+"Optional" = "オプショナル";
+"answers" = "回答";
+"Add New Answer" = "新規回答を追加";
+"Answer" = "回答";
+"Please add at least one answer!" = "回答を追加してください";
+
+// QuizController
+"Question" = "問題";
+"Type here" = "ここに入力";
+"Show Hint" = "ヒントを表示";
+"Hint:" = "ヒント：";
+
+// ExportController
+"Share this and others can import the quiz using the code" = "他人とこのコードをシェアすると、コードでこのクイズをインポートできる";
+"Share" = "シェア";
+
+// QuizResultsController
+"Number of Questions" = "問題数";
+"Correct Answers" = "正確な回答数";
+"Hint(s) Used" = "ヒントを使う回数";
+"Percentage" = "パーセント";
+"Grade" = "等級";
+"Show Wrongly Answered Questions" = "不正確に回答した問題を表示";
+"Correct Answer(s)" = "正解";
+"Your Answer" = "あなたの回答";
+"Not Answered" = "未回答";
+
+// Question
+"Fill In the Blank" = "空欄に記入";
+"Multiple Choice (Single Answer)" = "選択式（単数の回答）";
+"Multiple Choice (Multiple Answers)" = "選択式（複数の回答）";
+
+// QuestionRow
+"Blank Question" = "空白問題";
+"Tap to edit" = "タップして編集する";
