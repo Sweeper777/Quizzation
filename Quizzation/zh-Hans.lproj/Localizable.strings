@@ -1,7 +1,58 @@
-/* 
-  Localizable.strings
-  
+// NewQuizController
+"Name" = "名称";
+"grade boundaries" = "等级界限";
+"Questions" = "问题";
+"New Question" = "新问题";
+"Blank Question" = "空白问题";
+"OK" = "确定";
+"Error" = "错误";
+"Name cannot be blank!" = "请输入名称！";
+"Please add at least one question!" = "请至少增加一个答案！";
 
-  Created by Mulang Su on 2017/06/17.
+// QuizListController
+"No. of questions: " = "问题数：";
+"The code is not in the correct format!" = "代码格式不正确！";
+"Cancel" = "取消";
+"Import Quiz" = "载入测验";
+"Enter code in the box below" = "在以下的方块中输入代码";
 
-*/
+// QuestionEditorController
+"Question Editor" = "问题编辑器";
+"Type" = "类型";
+"question" = "问题";
+"Hint" = "提示";
+"Optional" = "可选填";
+"answers" = "答案";
+"Add New Answer" = "增加新答案";
+"Answer" = "答案";
+"Please add at least one answer!" = "请至少增加一个答案！";
+
+// QuizController
+"Question" = "问题";
+"Type here" = "在此输入";
+"Show Hint" = "显示提示";
+"Hint:" = "提示：";
+
+// ExportController
+"Share this and others can import the quiz using the code" = "将以上的代码分享给别人，他们便可以载入这个测验";
+"Share" = "分享";
+
+// QuizResultsController
+"Number of Questions" = "问题（个）";
+"Correct Answers" = "正确答案（个）";
+"Hint(s) Used" = "使用提示（次）";
+"Percentage" = "百分比";
+"Grade" = "等级";
+"Show Wrongly Answered Questions" = "显示回答错误的问题";
+"Correct Answer(s)" = "正确答案";
+"Your Answer" = "您的答案";
+"Not Answered" = "未作答";
+
+// Question
+"Fill In the Blank" = "填充题";
+"Multiple Choice (Single Answer)" = "选择题（单选）";
+"Multiple Choice (Multiple Answers)" = "选择题（多选）";
+
+// QuestionRow
+"Blank Question" = "空白问题";
+"Tap to edit" = "轻触以编辑";
