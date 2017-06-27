@@ -64,14 +64,20 @@ class QuizController: FormViewController {
             let row = form.rowBy(tag: "answer\(index)")!
             switch question.type {
             case .blank:
-                guard let answer = row.baseValue as? String else { continue }
+                guard let answer = row.baseValue as? String else {
+                    wrongAnswers.append(WronglyAnsweredQuestion(questionText: question.questionText, correctAnswers: question.possibleAnswers, yourAnswer: NSLocalizedString("Not Answered", comment: "")))
+                    continue
+                }
                 if question.possibleAnswers.contains(answer) {
                     correctAnswers += 1
                 } else {
                     wrongAnswers.append(WronglyAnsweredQuestion(questionText: question.questionText, correctAnswers: question.possibleAnswers, yourAnswer: answer))
                 }
             case .multipleMC:
-                guard let answer = ((row.baseValue as? NSMutableArray)?.map { $0 as? String }) else { continue }
+                guard let answer = ((row.baseValue as? NSMutableArray)?.map { $0 as? String }) else {
+                    wrongAnswers.append(WronglyAnsweredQuestion(questionText: question.questionText, correctAnswers: question.possibleAnswers, yourAnswer: NSLocalizedString("Not Answered", comment: "")))
+                    continue
+                }
                 if Set(question.possibleAnswers) == Set(answer.filter { $0 != nil }.map { $0! }) {
                     correctAnswers += 1
                 } else {
@@ -79,7 +85,10 @@ class QuizController: FormViewController {
                     wrongAnswers.append(WronglyAnsweredQuestion(questionText: question.questionText, correctAnswers: question.possibleAnswers, yourAnswer: nonNilAnswers.joined(separator: ", ")))
                 }
             case .singleMC:
-                guard let answer = row.baseValue as? Character else { continue }
+                guard let answer = row.baseValue as? Character else {
+                    wrongAnswers.append(WronglyAnsweredQuestion(questionText: question.questionText, correctAnswers: question.possibleAnswers, yourAnswer: NSLocalizedString("Not Answered", comment: "")))
+                    continue
+                }
                 if question.possibleAnswers.contains(answer.description) {
                     correctAnswers += 1
                 } else {
