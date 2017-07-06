@@ -13,8 +13,8 @@ class ExportController: FormViewController {
         form +++ Section(header: "", footer: NSLocalizedString("Share this and others can import the quiz using the code", comment: ""))
             <<< TextAreaRow(tagExportText) {
                 row in
-                row.cell.textLabel?.numberOfLines = 0
-                row.cell.textLabel?.font = UIFont(name: "Courier New", size: 16)
+//                row.cell.textLabel?.numberOfLines = 0
+                row.cell.textView.font = UIFont(name: "Courier New", size: 16)
                 row.value = self.base64String
                 
         }.cellUpdate({ (cell, row) in
