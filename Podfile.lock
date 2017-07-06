@@ -6,6 +6,7 @@ PODS:
   - MultiSelectSegmentedControl (1.1.0)
   - MultiSlider (1.1.2):
     - MiniLayout
+  - ObjectMapper (2.2.7)
   - Realm (2.8.3):
     - Realm/Headers (= 2.8.3)
   - Realm/Headers (2.8.3)
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - MGSwipeTableCell
   - MultiSelectSegmentedControl
   - MultiSlider
+  - ObjectMapper
   - RealmSwift
   - SCLAlertView
   - SwiftyJSON
@@ -33,12 +35,13 @@ SPEC CHECKSUMS:
   MiniLayout: 7664ed112a89d954e6ccb83b6ef5dc122fb77852
   MultiSelectSegmentedControl: 54fb23c997b971eff621cfcf965ff1613d99c3d2
   MultiSlider: ca6ca7e0a511378857d8822224245f3db63eb205
+  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
   Realm: 3601ef091c8c499a31101d8563b991e75546cdce
   RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwiftyUtils: f48a22d2fa8eece42a11d8bbb4d01a9758dd0602
 
-PODFILE CHECKSUM: f2e93746d8927c2c8fee1d05171df673bdfcfa6f
+PODFILE CHECKSUM: 2ac2be65d442eba6ff6e0b5c02b71ed028871b11
 
 COCOAPODS: 1.1.0.beta.1

@@ -13,4 +13,5 @@ target 'Quizzation' do
   pod 'RealmSwift'
   pod 'MultiSelectSegmentedControl'
   pod 'MultiSlider'
+  pod 'ObjectMapper'
 end

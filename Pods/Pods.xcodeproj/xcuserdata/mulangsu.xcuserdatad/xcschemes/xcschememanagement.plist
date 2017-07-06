@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Quizzation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,27 +72,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>16A1427200EEB3439F6459C88A6BB641</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E26BD0BA0B095B4DC50E2C5965C42AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>367775726ABA7003552CA455107C1627</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>3760B853FA54727E313D902385335AF5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>430E88EBA9C09E682B224A2A88C57E23</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>433783DD1794CDA9B41840406A23C4FD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4B546238C221225BF059B2E6EA63B6BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,11 +102,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7208F9C42A8AF4D7212ED691CA0BC4DE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>8EA7EB085A729BEBFA2E5C679A976D5E</key>
 		<dict>
 			<key>primary</key>
@@ -117,12 +112,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA613AF4C878ACD920C5D7C8D61470C6</key>
+		<key>AAA86DF2C1C01D556D2E9108B5AF6812</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EC204A3B5BAC62AA48FE9970CBA5AD80</key>
+		<key>D0C3CD6D0710A8E71021569A4B4EB5FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E55B619A1C18C07491B26F657278F343</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F122F774D01A1429465A694D9BDB1260</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F29939A6E87BC1066775F4F48553A397</key>
 		<dict>
 			<key>primary</key>
 			<true/>

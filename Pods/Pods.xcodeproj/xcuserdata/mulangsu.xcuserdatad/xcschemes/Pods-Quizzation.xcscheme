@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "433783DD1794CDA9B41840406A23C4FD"
+               BlueprintIdentifier = "F122F774D01A1429465A694D9BDB1260"
                BuildableName = "Pods_Quizzation.framework"
                BlueprintName = "Pods-Quizzation"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "433783DD1794CDA9B41840406A23C4FD"
+            BlueprintIdentifier = "F122F774D01A1429465A694D9BDB1260"
             BuildableName = "Pods_Quizzation.framework"
             BlueprintName = "Pods-Quizzation"
             ReferencedContainer = "container:Pods.xcodeproj">
