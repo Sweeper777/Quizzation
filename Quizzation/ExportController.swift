@@ -26,6 +26,10 @@ class ExportController: FormViewController {
                 row.cell.textView.font = UIFont(name: "Courier New", size: 16)
                 row.value = self.base64String
                 
+                row.cell.height = {
+                    self.base64String.height(withConstrainedWidth: row.cell.textView.width, font: row.cell.textView.font!) + 26
+                }
+                
         }.cellUpdate({ (cell, row) in
             cell.textView.isEditable = false
         })
