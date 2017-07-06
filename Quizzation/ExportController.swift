@@ -24,6 +24,7 @@ class ExportController: FormViewController {
                 row in
 //                row.cell.textLabel?.numberOfLines = 0
                 row.cell.textView.font = UIFont(name: "Courier New", size: 16)
+                row.cell.textView.isScrollEnabled = false
                 row.value = self.base64String
                 
                 row.cell.height = {
