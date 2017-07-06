@@ -20,6 +20,15 @@ class ExportController: FormViewController {
         base64String = quizData.base64EncodedString()
         
         form +++ Section(header: "", footer: NSLocalizedString("Share this and others can import the quiz using the code", comment: ""))
+            <<< ButtonRow() {
+                row in
+                row.title = "Share"
+                row.cell.tintColor = UIColor(hex: "3b7b3b")
+                }.onCellSelection {
+                    cell, row in
+                    let activityViewController = UIActivityViewController(activityItems: [self.base64String], applicationActivities: nil)
+                    self.navigationController?.present(activityViewController, animated: true)
+            }
             <<< TextAreaRow(tagExportText) {
                 row in
 //                row.cell.textLabel?.numberOfLines = 0
@@ -34,15 +43,6 @@ class ExportController: FormViewController {
         }.cellUpdate({ (cell, row) in
             cell.textView.isEditable = false
         })
-            <<< ButtonRow() {
-                row in
-                row.title = "Share"
-                row.cell.tintColor = UIColor(hex: "3b7b3b")
-            }.onCellSelection {
-                cell, row in
-                let activityViewController = UIActivityViewController(activityItems: [self.base64String], applicationActivities: nil)
-                self.navigationController?.present(activityViewController, animated: true)
-        }
         
     }
     
