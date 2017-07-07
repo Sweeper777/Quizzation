@@ -1,5 +1,6 @@
 import Foundation
 import SwiftyJSON
+import ObjectMapper
 
 class Quiz {
     let name: String
@@ -12,6 +13,10 @@ class Quiz {
         self.gradeBoundaries = gradeBoundaries
     }
     
+    required init(map: Map) throws {
+        name = try map.value(quizNameKey)
+        gradeBoundaries = try map.value(gradeBoundariesKey)
+        questions = try map.value(questionsKey)
     }
     
     }
