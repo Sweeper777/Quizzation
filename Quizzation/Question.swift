@@ -25,7 +25,7 @@ class Question: Equatable, ImmutableMappable {
     }
     
     static func ==(lhs: Question, rhs: Question) -> Bool {
-        return lhs.toJSON() == rhs.toJSON()
+        return JSON(lhs.toJSON()) == JSON(rhs.toJSON())
     }
 }
 
