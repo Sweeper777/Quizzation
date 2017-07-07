@@ -2,7 +2,7 @@ import Foundation
 import SwiftyJSON
 import ObjectMapper
 
-class Quiz {
+class Quiz : ImmutableMappable {
     let name: String
     let gradeBoundaries: [Int]
     let questions: [Question]
