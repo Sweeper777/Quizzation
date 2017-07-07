@@ -1,7 +1,8 @@
 import SwiftyJSON
 import Foundation
+import ObjectMapper
 
-class Question: Equatable {
+class Question: Equatable, ImmutableMappable {
     let type: QuestionType
     let questionText: String
     let possibleAnswers: [String]
@@ -14,6 +15,11 @@ class Question: Equatable {
         self.hint = hint
     }
     
+    required init(map: Map) throws {
+        type = try map.value(questionTypeKey)
+        questionText = try map.value(questionTextKey)
+        possibleAnswers = try map.value(possibleAnswersKey)
+        hint = try? map.value(hintKey)
     }
     
     }
