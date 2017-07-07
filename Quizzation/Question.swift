@@ -22,6 +22,11 @@ class Question: Equatable, ImmutableMappable {
         hint = try? map.value(hintKey)
     }
     
+    func mapping(map: Map) {
+        type >>> map[questionTypeKey]
+        questionText >>> map[questionTextKey]
+        possibleAnswers >>> map[possibleAnswersKey]
+        hint >>> map[hintKey]
     }
     
     static func ==(lhs: Question, rhs: Question) -> Bool {
