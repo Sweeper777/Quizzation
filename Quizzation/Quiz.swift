@@ -12,20 +12,8 @@ class Quiz {
         self.gradeBoundaries = gradeBoundaries
     }
     
-    func toJSON() -> JSON {
-        return [
-            quizNameKey: name,
-            questionsKey: questions.map { $0.toJSON() },
-            gradeBoundariesKey: gradeBoundaries
-        ]
     }
     
-    static func from(json: JSON) -> Quiz? {
-        guard let name = json[quizNameKey].string else { return nil }
-        guard let arr = json[questionsKey].array else { return nil }
-        guard let gradeBoundaries = (json[gradeBoundariesKey].array?.map { $0.int }.filter { $0 != nil }) else { return nil }
-        let questions = arr.map { Question.from(json: $0) }.filter { $0 != nil }
-        return Quiz(name: name, questions: questions as! [Question], gradeBoundaries: gradeBoundaries as! [Int])
     }
     
     func grade(percentage: Double) -> String {
