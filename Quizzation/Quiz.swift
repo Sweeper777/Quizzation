@@ -19,6 +19,10 @@ class Quiz : ImmutableMappable {
         questions = try map.value(questionsKey)
     }
     
+    func mapping(map: Map) {
+        name >>> map[quizNameKey]
+        gradeBoundaries >>> map[gradeBoundariesKey]
+        questions >>> map[questionsKey]
     }
     
     func grade(percentage: Double) -> String {
