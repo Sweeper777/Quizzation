@@ -41,16 +41,17 @@ class QuizResultsController: FormViewController {
             row.title = NSLocalizedString("Grade", comment: "")
             row.value = quiz.grade(percentage: Double(correctAnswers) / Double(quiz.questions.count))
         }
-        
-        form +++ ButtonRow() {
-            row in
-            row.title = NSLocalizedString("Show Wrongly Answered Questions", comment: "")
-            row.cell.tintColor = UIColor(hex: "3b7b3b")
-            }.onCellSelection {
-                cell, row in
-                row.hidden = true
-                row.evaluateHidden()
-                self.showWronglyAnsweredQuestions()
+        if wrongAnswers.isNotEmpty {
+            form +++ ButtonRow() {
+                row in
+                row.title = NSLocalizedString("Show Wrongly Answered Questions", comment: "")
+                row.cell.tintColor = UIColor(hex: "3b7b3b")
+                }.onCellSelection {
+                    cell, row in
+                    row.hidden = true
+                    row.evaluateHidden()
+                    self.showWronglyAnsweredQuestions()
+            }
         }
     }
     
