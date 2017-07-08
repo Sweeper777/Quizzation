@@ -12,7 +12,7 @@ class NewQuizController: FormViewController {
         super.viewDidLoad()
         var quiz: Quiz?
         if quizData != nil {
-            quiz = Quiz.from(json: JSON(data: quizData!.data! as Data))
+            quiz = try? Quiz(JSONString: JSON(data: quizData!.data! as Data).rawString()!)
             title = quiz!.name
         }
         
@@ -97,13 +97,13 @@ class NewQuizController: FormViewController {
                 let realm = try! Realm()
                 if quizData == nil {
                     let quizData = QuizData()
-                    quizData.data = try! quiz.toJSON().rawData() as NSData?
+                    quizData.data = try! JSON(quiz.toJSON()).rawData() as NSData?
                     try? realm.write {
                         realm.add(quizData)
                     }
                 } else {
                     try? realm.write {
-                        quizData!.data = try! quiz.toJSON().rawData() as NSData?
+                        quizData!.data = try! JSON(quiz.toJSON()).rawData() as NSData?
                     }
                 }
                 performSegue(withIdentifier: "unwind", sender: self)

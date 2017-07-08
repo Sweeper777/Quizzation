@@ -41,7 +41,7 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let quizData = quizzes[indexPath.row]
-        let quiz = Quiz.from(json: JSON(data: quizData.data! as Data))
+        let quiz = try! Quiz(JSONString: JSON(data: quizData.data! as Data).rawString()!)
         performSegue(withIdentifier: "doQuiz", sender: quiz)
     }
     
@@ -70,7 +70,7 @@ class QuizListController: UITableViewController, MGSwipeTableCellDelegate {
         let textView = alert.addTextView()
         alert.addButton(NSLocalizedString("OK", comment: "")) {
             let base64String = textView.text!
-            if let data = Data(base64Encoded: base64String), let _ = Quiz.from(json: JSON(data: data)) {
+            if let data = Data(base64Encoded: base64String), let _ = try? Quiz(JSONString: JSON(data: data).rawString()!) {
                 try? self.realm?.write {
                     let quizData = QuizData()
                     quizData.data = data as NSData
